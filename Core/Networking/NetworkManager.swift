@@ -59,7 +59,8 @@ enum NetworkManager: HTTPNetworking {
             //Apple Docs: https://developer.apple.com/reference/foundation/httpurlresponse
             //Whenever you make HTTP URL load requests, any response objects you get back from the URLSession, NSURLConnection, or NSURLDownload class are instances of the NSHTTPURLResponse class.
             let code = (response as! HTTPURLResponse).statusCode
-            completion(.failed(code: code, data: data))
+            let description = HTTPURLResponse.localizedString(forStatusCode: code)
+            completion(.failed(code: code, description: description))
         }
     }
     

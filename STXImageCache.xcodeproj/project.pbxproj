@@ -75,6 +75,25 @@
 		AE0F24551E49DCAF00B6E08B /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24531E49DCAF00B6E08B /* JSONRequest.swift */; };
 		AE0F24561E49DCAF00B6E08B /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24531E49DCAF00B6E08B /* JSONRequest.swift */; };
 		AE0F24571E49DCAF00B6E08B /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24531E49DCAF00B6E08B /* JSONRequest.swift */; };
+		AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
+		AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
+		AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
+		AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
+		AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */; };
+		AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */; };
+		AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */; };
+		AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */; };
+		AE0F24671E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
+		AE0F24681E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
+		AE0F24691E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
+		AE0F246A1E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
+		AE0F24871E49FE2000B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
+		AE0F24881E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
+		AE0F24891E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
+		AE0F248A1E4A004800B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
+		AE0F248C1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */; };
+		AE0F248E1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */; };
+		AE0F24921E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +257,15 @@
 		AE0F241D1E49D98A00B6E08B /* QueryItemsConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemsConverter.swift; sourceTree = "<group>"; };
 		AE0F241E1E49D98A00B6E08B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		AE0F24531E49DCAF00B6E08B /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
+		AE0F24581E49DFA500B6E08B /* STXImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageCache.swift; sourceTree = "<group>"; };
+		AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
+		AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
+		AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
+		AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
+		AE0F24661E49ED1900B6E08B /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+ImageViewExtensions.swift"; sourceTree = "<group>"; };
+		AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+UIButtonExtensions.swift"; sourceTree = "<group>"; };
+		AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +382,7 @@
 		AE0F233C1E49C73700B6E08B /* STXImageCache-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */,
 				AE0F233E1E49C73700B6E08B /* Info.plist */,
 			);
 			path = "STXImageCache-iOS";
@@ -362,6 +391,7 @@
 		AE0F234E1E49C78A00B6E08B /* STXImageCache-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */,
 				AE0F23501E49C78A00B6E08B /* Info.plist */,
 			);
 			path = "STXImageCache-macOS";
@@ -370,6 +400,7 @@
 		AE0F235B1E49C7D500B6E08B /* STXImageCache-watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */,
 				AE0F235D1E49C7D500B6E08B /* Info.plist */,
 			);
 			path = "STXImageCache-watchOS";
@@ -378,6 +409,7 @@
 		AE0F23681E49C7E300B6E08B /* STXImageCache-tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */,
 				AE0F236A1E49C7E300B6E08B /* Info.plist */,
 			);
 			path = "STXImageCache-tvOS";
@@ -387,6 +419,11 @@
 			isa = PBXGroup;
 			children = (
 				AE0F24111E49D98A00B6E08B /* Networking */,
+				AE0F24581E49DFA500B6E08B /* STXImageCache.swift */,
+				AE0F24661E49ED1900B6E08B /* CacheManager.swift */,
+				AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */,
+				AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */,
+				AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -827,10 +864,15 @@
 				AE0F244F1E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24541E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24431E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
+				AE0F24671E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */,
+				AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F241F1E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F243F1E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F242B1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
+				AE0F248C1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */,
 				AE0F24231E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
+				AE0F248A1E4A004800B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244B1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -870,10 +912,15 @@
 				AE0F24501E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24551E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24441E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
+				AE0F24681E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */,
+				AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24201E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24401E49D98A00B6E08B /* NetworkManager.swift in Sources */,
+				AE0F24921E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift in Sources */,
 				AE0F242C1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
 				AE0F24241E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
+				AE0F24891E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244C1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,10 +933,15 @@
 				AE0F24511E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24561E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24451E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
+				AE0F24691E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */,
+				AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24211E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24411E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F242D1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
+				AE0F248E1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */,
 				AE0F24251E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
+				AE0F24881E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244D1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,10 +954,14 @@
 				AE0F24521E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24571E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24461E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
+				AE0F246A1E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */,
+				AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24221E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24421E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F242E1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
 				AE0F24261E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
+				AE0F24871E49FE2000B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244E1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

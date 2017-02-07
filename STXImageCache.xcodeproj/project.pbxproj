@@ -1,0 +1,1436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0F23271E49C72200B6E08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23261E49C72200B6E08B /* AppDelegate.swift */; };
+		AE0F23291E49C72200B6E08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23281E49C72200B6E08B /* ViewController.swift */; };
+		AE0F232C1E49C72200B6E08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0F232A1E49C72200B6E08B /* Main.storyboard */; };
+		AE0F232E1E49C72200B6E08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0F232D1E49C72200B6E08B /* Assets.xcassets */; };
+		AE0F23311E49C72200B6E08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0F232F1E49C72200B6E08B /* LaunchScreen.storyboard */; };
+		AE0F23421E49C73700B6E08B /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F233B1E49C73700B6E08B /* STXImageCache.framework */; };
+		AE0F23431E49C73700B6E08B /* STXImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F233B1E49C73700B6E08B /* STXImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE0F23771E49C89A00B6E08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23761E49C89A00B6E08B /* AppDelegate.swift */; };
+		AE0F23791E49C89A00B6E08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23781E49C89A00B6E08B /* ViewController.swift */; };
+		AE0F237B1E49C89A00B6E08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0F237A1E49C89A00B6E08B /* Assets.xcassets */; };
+		AE0F237E1E49C89A00B6E08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0F237C1E49C89A00B6E08B /* Main.storyboard */; };
+		AE0F238F1E49C8E300B6E08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F238E1E49C8E300B6E08B /* AppDelegate.swift */; };
+		AE0F23911E49C8E300B6E08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23901E49C8E300B6E08B /* ViewController.swift */; };
+		AE0F23941E49C8E300B6E08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0F23921E49C8E300B6E08B /* Main.storyboard */; };
+		AE0F23961E49C8E300B6E08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0F23951E49C8E300B6E08B /* Assets.xcassets */; };
+		AE0F23A11E49C91E00B6E08B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0F239F1E49C91E00B6E08B /* Interface.storyboard */; };
+		AE0F23A31E49C91E00B6E08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0F23A21E49C91E00B6E08B /* Assets.xcassets */; };
+		AE0F23AA1E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE0F23A91E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE0F23AF1E49C91E00B6E08B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23AE1E49C91E00B6E08B /* InterfaceController.swift */; };
+		AE0F23B11E49C91E00B6E08B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F23B01E49C91E00B6E08B /* ExtensionDelegate.swift */; };
+		AE0F23B31E49C91E00B6E08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0F23B21E49C91E00B6E08B /* Assets.xcassets */; };
+		AE0F23B71E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AE0F239D1E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app */; };
+		AE0F23D11E49CBF200B6E08B /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */; };
+		AE0F23D21E49CBF200B6E08B /* STXImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE0F23E71E49CCCD00B6E08B /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */; };
+		AE0F23E81E49CCCD00B6E08B /* STXImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE0F23FD1E49CD3900B6E08B /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */; };
+		AE0F23FE1E49CD3900B6E08B /* STXImageCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE0F24081E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; };
+		AE0F24091E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; };
+		AE0F240A1E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; };
+		AE0F240B1E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE0F23401E49C73700B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F233A1E49C73700B6E08B;
+			remoteInfo = "STXImageCache-iOS";
+		};
+		AE0F23AB1E49C91E00B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F23A81E49C91E00B6E08B;
+			remoteInfo = "STXImageCacheDemo-watchOS Extension";
+		};
+		AE0F23B51E49C91E00B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F239C1E49C91E00B6E08B;
+			remoteInfo = "STXImageCacheDemo-watchOS";
+		};
+		AE0F23CF1E49CBF200B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F23C91E49CBF200B6E08B;
+			remoteInfo = "STXImageCache-macOS";
+		};
+		AE0F23E51E49CCCD00B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F23DF1E49CCCD00B6E08B;
+			remoteInfo = "STXImageCache-tvOS";
+		};
+		AE0F23FB1E49CD3900B6E08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0F22F01E49C62C00B6E08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0F23F51E49CD3900B6E08B;
+			remoteInfo = "STXImageCache-watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE0F23471E49C73700B6E08B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE0F23431E49C73700B6E08B /* STXImageCache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23871E49C8C900B6E08B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE0F23D21E49CBF200B6E08B /* STXImageCache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23BB1E49C91E00B6E08B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE0F23AA1E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23BF1E49C91E00B6E08B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AE0F23B71E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23DA1E49CCB100B6E08B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE0F23E81E49CCCD00B6E08B /* STXImageCache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23F01E49CD1000B6E08B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE0F23FE1E49CD3900B6E08B /* STXImageCache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE0F23241E49C72200B6E08B /* STXImageCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STXImageCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23261E49C72200B6E08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0F23281E49C72200B6E08B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0F232B1E49C72200B6E08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0F232D1E49C72200B6E08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0F23301E49C72200B6E08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0F23321E49C72200B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F233B1E49C73700B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F233E1E49C73700B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F23501E49C78A00B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F235D1E49C7D500B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F236A1E49C7E300B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F23741E49C89900B6E08B /* STXImageCacheDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STXImageCacheDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23761E49C89A00B6E08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0F23781E49C89A00B6E08B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0F237A1E49C89A00B6E08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0F237D1E49C89A00B6E08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0F237F1E49C89A00B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F238C1E49C8E300B6E08B /* STXImageCacheDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STXImageCacheDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F238E1E49C8E300B6E08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0F23901E49C8E300B6E08B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0F23931E49C8E300B6E08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0F23951E49C8E300B6E08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0F23971E49C8E300B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F239D1E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STXImageCacheDemo-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23A01E49C91E00B6E08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AE0F23A21E49C91E00B6E08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0F23A41E49C91E00B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F23A91E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "STXImageCacheDemo-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23AE1E49C91E00B6E08B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AE0F23B01E49C91E00B6E08B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AE0F23B21E49C91E00B6E08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0F23B41E49C91E00B6E08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0F24071E49D68400B6E08B /* STXImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXImageCache.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0F23211E49C72200B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23421E49C73700B6E08B /* STXImageCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23371E49C73700B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23711E49C89900B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23D11E49CBF200B6E08B /* STXImageCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23891E49C8E300B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23E71E49CCCD00B6E08B /* STXImageCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23A61E49C91E00B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23FD1E49CD3900B6E08B /* STXImageCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23C61E49CBF200B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23DC1E49CCCD00B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23F21E49CD3900B6E08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0F22EF1E49C62C00B6E08B = {
+			isa = PBXGroup;
+			children = (
+				AE0F23251E49C72200B6E08B /* STXImageCacheDemo */,
+				AE0F23751E49C89A00B6E08B /* STXImageCacheDemo-macOS */,
+				AE0F238D1E49C8E300B6E08B /* STXImageCacheDemo-tvOS */,
+				AE0F239E1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */,
+				AE0F23AD1E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */,
+				AE0F24071E49D68400B6E08B /* STXImageCache.h */,
+				AE0F236F1E49C84200B6E08B /* Core */,
+				AE0F233C1E49C73700B6E08B /* STXImageCache-iOS */,
+				AE0F234E1E49C78A00B6E08B /* STXImageCache-macOS */,
+				AE0F235B1E49C7D500B6E08B /* STXImageCache-watchOS */,
+				AE0F23681E49C7E300B6E08B /* STXImageCache-tvOS */,
+				AE0F22FA1E49C62C00B6E08B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0F22FA1E49C62C00B6E08B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F23241E49C72200B6E08B /* STXImageCacheDemo.app */,
+				AE0F233B1E49C73700B6E08B /* STXImageCache.framework */,
+				AE0F23741E49C89900B6E08B /* STXImageCacheDemo-macOS.app */,
+				AE0F238C1E49C8E300B6E08B /* STXImageCacheDemo-tvOS.app */,
+				AE0F239D1E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app */,
+				AE0F23A91E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex */,
+				AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */,
+				AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */,
+				AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0F23251E49C72200B6E08B /* STXImageCacheDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F23261E49C72200B6E08B /* AppDelegate.swift */,
+				AE0F23281E49C72200B6E08B /* ViewController.swift */,
+				AE0F232A1E49C72200B6E08B /* Main.storyboard */,
+				AE0F232D1E49C72200B6E08B /* Assets.xcassets */,
+				AE0F232F1E49C72200B6E08B /* LaunchScreen.storyboard */,
+				AE0F23321E49C72200B6E08B /* Info.plist */,
+			);
+			path = STXImageCacheDemo;
+			sourceTree = "<group>";
+		};
+		AE0F233C1E49C73700B6E08B /* STXImageCache-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F233E1E49C73700B6E08B /* Info.plist */,
+			);
+			path = "STXImageCache-iOS";
+			sourceTree = "<group>";
+		};
+		AE0F234E1E49C78A00B6E08B /* STXImageCache-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F23501E49C78A00B6E08B /* Info.plist */,
+			);
+			path = "STXImageCache-macOS";
+			sourceTree = "<group>";
+		};
+		AE0F235B1E49C7D500B6E08B /* STXImageCache-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F235D1E49C7D500B6E08B /* Info.plist */,
+			);
+			path = "STXImageCache-watchOS";
+			sourceTree = "<group>";
+		};
+		AE0F23681E49C7E300B6E08B /* STXImageCache-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F236A1E49C7E300B6E08B /* Info.plist */,
+			);
+			path = "STXImageCache-tvOS";
+			sourceTree = "<group>";
+		};
+		AE0F236F1E49C84200B6E08B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AE0F23751E49C89A00B6E08B /* STXImageCacheDemo-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F23761E49C89A00B6E08B /* AppDelegate.swift */,
+				AE0F23781E49C89A00B6E08B /* ViewController.swift */,
+				AE0F237A1E49C89A00B6E08B /* Assets.xcassets */,
+				AE0F237C1E49C89A00B6E08B /* Main.storyboard */,
+				AE0F237F1E49C89A00B6E08B /* Info.plist */,
+			);
+			path = "STXImageCacheDemo-macOS";
+			sourceTree = "<group>";
+		};
+		AE0F238D1E49C8E300B6E08B /* STXImageCacheDemo-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F238E1E49C8E300B6E08B /* AppDelegate.swift */,
+				AE0F23901E49C8E300B6E08B /* ViewController.swift */,
+				AE0F23921E49C8E300B6E08B /* Main.storyboard */,
+				AE0F23951E49C8E300B6E08B /* Assets.xcassets */,
+				AE0F23971E49C8E300B6E08B /* Info.plist */,
+			);
+			path = "STXImageCacheDemo-tvOS";
+			sourceTree = "<group>";
+		};
+		AE0F239E1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F239F1E49C91E00B6E08B /* Interface.storyboard */,
+				AE0F23A21E49C91E00B6E08B /* Assets.xcassets */,
+				AE0F23A41E49C91E00B6E08B /* Info.plist */,
+			);
+			path = "STXImageCacheDemo-watchOS";
+			sourceTree = "<group>";
+		};
+		AE0F23AD1E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F23AE1E49C91E00B6E08B /* InterfaceController.swift */,
+				AE0F23B01E49C91E00B6E08B /* ExtensionDelegate.swift */,
+				AE0F23B21E49C91E00B6E08B /* Assets.xcassets */,
+				AE0F23B41E49C91E00B6E08B /* Info.plist */,
+			);
+			path = "STXImageCacheDemo-watchOS Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE0F23381E49C73700B6E08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F24081E49D68400B6E08B /* STXImageCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23C71E49CBF200B6E08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F24091E49D68400B6E08B /* STXImageCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23DD1E49CCCD00B6E08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F240A1E49D68400B6E08B /* STXImageCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23F31E49CD3900B6E08B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F240B1E49D68400B6E08B /* STXImageCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE0F23231E49C72200B6E08B /* STXImageCacheDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23331E49C72200B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo" */;
+			buildPhases = (
+				AE0F23201E49C72200B6E08B /* Sources */,
+				AE0F23211E49C72200B6E08B /* Frameworks */,
+				AE0F23221E49C72200B6E08B /* Resources */,
+				AE0F23471E49C73700B6E08B /* Embed Frameworks */,
+				AE0F23BF1E49C91E00B6E08B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0F23411E49C73700B6E08B /* PBXTargetDependency */,
+				AE0F23B61E49C91E00B6E08B /* PBXTargetDependency */,
+			);
+			name = STXImageCacheDemo;
+			productName = STXImageCacheDemo;
+			productReference = AE0F23241E49C72200B6E08B /* STXImageCacheDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0F233A1E49C73700B6E08B /* STXImageCache-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23441E49C73700B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-iOS" */;
+			buildPhases = (
+				AE0F23361E49C73700B6E08B /* Sources */,
+				AE0F23371E49C73700B6E08B /* Frameworks */,
+				AE0F23381E49C73700B6E08B /* Headers */,
+				AE0F23391E49C73700B6E08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STXImageCache-iOS";
+			productName = "STXImageCache-iOS";
+			productReference = AE0F233B1E49C73700B6E08B /* STXImageCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE0F23731E49C89900B6E08B /* STXImageCacheDemo-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23801E49C89A00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-macOS" */;
+			buildPhases = (
+				AE0F23701E49C89900B6E08B /* Sources */,
+				AE0F23711E49C89900B6E08B /* Frameworks */,
+				AE0F23721E49C89900B6E08B /* Resources */,
+				AE0F23871E49C8C900B6E08B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0F23D01E49CBF200B6E08B /* PBXTargetDependency */,
+			);
+			name = "STXImageCacheDemo-macOS";
+			productName = "STXImageCacheDemo-macOS";
+			productReference = AE0F23741E49C89900B6E08B /* STXImageCacheDemo-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0F238B1E49C8E300B6E08B /* STXImageCacheDemo-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23981E49C8E300B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-tvOS" */;
+			buildPhases = (
+				AE0F23881E49C8E300B6E08B /* Sources */,
+				AE0F23891E49C8E300B6E08B /* Frameworks */,
+				AE0F238A1E49C8E300B6E08B /* Resources */,
+				AE0F23DA1E49CCB100B6E08B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0F23E61E49CCCD00B6E08B /* PBXTargetDependency */,
+			);
+			name = "STXImageCacheDemo-tvOS";
+			productName = "STXImageCacheDemo-tvOS";
+			productReference = AE0F238C1E49C8E300B6E08B /* STXImageCacheDemo-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0F239C1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23BC1E49C91E00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-watchOS" */;
+			buildPhases = (
+				AE0F239B1E49C91E00B6E08B /* Resources */,
+				AE0F23BB1E49C91E00B6E08B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0F23AC1E49C91E00B6E08B /* PBXTargetDependency */,
+			);
+			name = "STXImageCacheDemo-watchOS";
+			productName = "STXImageCacheDemo-watchOS";
+			productReference = AE0F239D1E49C91E00B6E08B /* STXImageCacheDemo-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AE0F23A81E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23B81E49C91E00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-watchOS Extension" */;
+			buildPhases = (
+				AE0F23A51E49C91E00B6E08B /* Sources */,
+				AE0F23A61E49C91E00B6E08B /* Frameworks */,
+				AE0F23A71E49C91E00B6E08B /* Resources */,
+				AE0F23F01E49CD1000B6E08B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0F23FC1E49CD3900B6E08B /* PBXTargetDependency */,
+			);
+			name = "STXImageCacheDemo-watchOS Extension";
+			productName = "STXImageCacheDemo-watchOS Extension";
+			productReference = AE0F23A91E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		AE0F23C91E49CBF200B6E08B /* STXImageCache-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23D31E49CBF200B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-macOS" */;
+			buildPhases = (
+				AE0F23C51E49CBF200B6E08B /* Sources */,
+				AE0F23C61E49CBF200B6E08B /* Frameworks */,
+				AE0F23C71E49CBF200B6E08B /* Headers */,
+				AE0F23C81E49CBF200B6E08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STXImageCache-macOS";
+			productName = "STXImageCache-macOS";
+			productReference = AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE0F23DF1E49CCCD00B6E08B /* STXImageCache-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23E91E49CCCD00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-tvOS" */;
+			buildPhases = (
+				AE0F23DB1E49CCCD00B6E08B /* Sources */,
+				AE0F23DC1E49CCCD00B6E08B /* Frameworks */,
+				AE0F23DD1E49CCCD00B6E08B /* Headers */,
+				AE0F23DE1E49CCCD00B6E08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STXImageCache-tvOS";
+			productName = "STXImageCache-tvOS";
+			productReference = AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE0F23F51E49CD3900B6E08B /* STXImageCache-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0F23FF1E49CD3900B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-watchOS" */;
+			buildPhases = (
+				AE0F23F11E49CD3900B6E08B /* Sources */,
+				AE0F23F21E49CD3900B6E08B /* Frameworks */,
+				AE0F23F31E49CD3900B6E08B /* Headers */,
+				AE0F23F41E49CD3900B6E08B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STXImageCache-watchOS";
+			productName = "STXImageCache-watchOS";
+			productReference = AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0F22F01E49C62C00B6E08B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "STX Next Sp. z o.o.";
+				TargetAttributes = {
+					AE0F23231E49C72200B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F233A1E49C73700B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+					};
+					AE0F23731E49C89900B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B7EKJ66X5Q;
+						ProvisioningStyle = Automatic;
+					};
+					AE0F238B1E49C8E300B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F239C1E49C91E00B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F23A81E49C91E00B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F23C91E49CBF200B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F23DF1E49CCCD00B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					AE0F23F51E49CD3900B6E08B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = AE0F22F31E49C62C00B6E08B /* Build configuration list for PBXProject "STXImageCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0F22EF1E49C62C00B6E08B;
+			productRefGroup = AE0F22FA1E49C62C00B6E08B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0F23231E49C72200B6E08B /* STXImageCacheDemo */,
+				AE0F23731E49C89900B6E08B /* STXImageCacheDemo-macOS */,
+				AE0F238B1E49C8E300B6E08B /* STXImageCacheDemo-tvOS */,
+				AE0F239C1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */,
+				AE0F23A81E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */,
+				AE0F233A1E49C73700B6E08B /* STXImageCache-iOS */,
+				AE0F23C91E49CBF200B6E08B /* STXImageCache-macOS */,
+				AE0F23DF1E49CCCD00B6E08B /* STXImageCache-tvOS */,
+				AE0F23F51E49CD3900B6E08B /* STXImageCache-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0F23221E49C72200B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23311E49C72200B6E08B /* LaunchScreen.storyboard in Resources */,
+				AE0F232E1E49C72200B6E08B /* Assets.xcassets in Resources */,
+				AE0F232C1E49C72200B6E08B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23391E49C73700B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23721E49C89900B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F237B1E49C89A00B6E08B /* Assets.xcassets in Resources */,
+				AE0F237E1E49C89A00B6E08B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F238A1E49C8E300B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23961E49C8E300B6E08B /* Assets.xcassets in Resources */,
+				AE0F23941E49C8E300B6E08B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F239B1E49C91E00B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23A31E49C91E00B6E08B /* Assets.xcassets in Resources */,
+				AE0F23A11E49C91E00B6E08B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23A71E49C91E00B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23B31E49C91E00B6E08B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23C81E49CBF200B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23DE1E49CCCD00B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23F41E49CD3900B6E08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0F23201E49C72200B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23291E49C72200B6E08B /* ViewController.swift in Sources */,
+				AE0F23271E49C72200B6E08B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23361E49C73700B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23701E49C89900B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23791E49C89A00B6E08B /* ViewController.swift in Sources */,
+				AE0F23771E49C89A00B6E08B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23881E49C8E300B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23911E49C8E300B6E08B /* ViewController.swift in Sources */,
+				AE0F238F1E49C8E300B6E08B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23A51E49C91E00B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0F23B11E49C91E00B6E08B /* ExtensionDelegate.swift in Sources */,
+				AE0F23AF1E49C91E00B6E08B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23C51E49CBF200B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23DB1E49CCCD00B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0F23F11E49CD3900B6E08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE0F23411E49C73700B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F233A1E49C73700B6E08B /* STXImageCache-iOS */;
+			targetProxy = AE0F23401E49C73700B6E08B /* PBXContainerItemProxy */;
+		};
+		AE0F23AC1E49C91E00B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F23A81E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */;
+			targetProxy = AE0F23AB1E49C91E00B6E08B /* PBXContainerItemProxy */;
+		};
+		AE0F23B61E49C91E00B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F239C1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */;
+			targetProxy = AE0F23B51E49C91E00B6E08B /* PBXContainerItemProxy */;
+		};
+		AE0F23D01E49CBF200B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F23C91E49CBF200B6E08B /* STXImageCache-macOS */;
+			targetProxy = AE0F23CF1E49CBF200B6E08B /* PBXContainerItemProxy */;
+		};
+		AE0F23E61E49CCCD00B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F23DF1E49CCCD00B6E08B /* STXImageCache-tvOS */;
+			targetProxy = AE0F23E51E49CCCD00B6E08B /* PBXContainerItemProxy */;
+		};
+		AE0F23FC1E49CD3900B6E08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0F23F51E49CD3900B6E08B /* STXImageCache-watchOS */;
+			targetProxy = AE0F23FB1E49CD3900B6E08B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE0F232A1E49C72200B6E08B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0F232B1E49C72200B6E08B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0F232F1E49C72200B6E08B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0F23301E49C72200B6E08B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0F237C1E49C89A00B6E08B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0F237D1E49C89A00B6E08B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0F23921E49C8E300B6E08B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0F23931E49C8E300B6E08B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0F239F1E49C91E00B6E08B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0F23A01E49C91E00B6E08B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0F230B1E49C62D00B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE0F230C1E49C62D00B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE0F23341E49C72200B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = STXImageCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE0F23351E49C72200B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = STXImageCacheDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE0F23451E49C73700B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-iOS";
+				PRODUCT_NAME = STXImageCache;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE0F23461E49C73700B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-iOS";
+				PRODUCT_NAME = STXImageCache;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE0F23811E49C89A00B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B7EKJ66X5Q;
+				INFOPLIST_FILE = "STXImageCacheDemo-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE0F23821E49C89A00B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B7EKJ66X5Q;
+				INFOPLIST_FILE = "STXImageCacheDemo-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE0F23991E49C8E300B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "STXImageCacheDemo-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheDemo-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		AE0F239A1E49C8E300B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "STXImageCacheDemo-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheDemo-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		AE0F23B91E49C91E00B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "STXImageCacheDemo-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		AE0F23BA1E49C91E00B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "STXImageCacheDemo-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		AE0F23BD1E49C91E00B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = STXImageCacheDemo_watchOS_Extension;
+				INFOPLIST_FILE = "STXImageCacheDemo-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		AE0F23BE1E49C91E00B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = STXImageCacheDemo_watchOS_Extension;
+				INFOPLIST_FILE = "STXImageCacheDemo-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		AE0F23D41E49CBF200B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "STXImageCache-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-macOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE0F23D51E49CBF200B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "STXImageCache-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-macOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE0F23EA1E49CCCD00B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-tvOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		AE0F23EB1E49CCCD00B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-tvOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		AE0F24001E49CD3900B6E08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-watchOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		AE0F24011E49CD3900B6E08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "STXImageCache-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-watchOS";
+				PRODUCT_NAME = STXImageCache;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0F22F31E49C62C00B6E08B /* Build configuration list for PBXProject "STXImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F230B1E49C62D00B6E08B /* Debug */,
+				AE0F230C1E49C62D00B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23331E49C72200B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23341E49C72200B6E08B /* Debug */,
+				AE0F23351E49C72200B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23441E49C73700B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23451E49C73700B6E08B /* Debug */,
+				AE0F23461E49C73700B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23801E49C89A00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23811E49C89A00B6E08B /* Debug */,
+				AE0F23821E49C89A00B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23981E49C8E300B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23991E49C8E300B6E08B /* Debug */,
+				AE0F239A1E49C8E300B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23B81E49C91E00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23B91E49C91E00B6E08B /* Debug */,
+				AE0F23BA1E49C91E00B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23BC1E49C91E00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCacheDemo-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23BD1E49C91E00B6E08B /* Debug */,
+				AE0F23BE1E49C91E00B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23D31E49CBF200B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23D41E49CBF200B6E08B /* Debug */,
+				AE0F23D51E49CBF200B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23E91E49CCCD00B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F23EA1E49CCCD00B6E08B /* Debug */,
+				AE0F23EB1E49CCCD00B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0F23FF1E49CD3900B6E08B /* Build configuration list for PBXNativeTarget "STXImageCache-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0F24001E49CD3900B6E08B /* Debug */,
+				AE0F24011E49CD3900B6E08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0F22F01E49C62C00B6E08B /* Project object */;
+}

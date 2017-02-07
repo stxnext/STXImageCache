@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE0F233A1E49C73700B6E08B"
-               BuildableName = "STXImageCache_iOS.framework"
+               BuildableName = "STXImageCache.framework"
                BlueprintName = "STXImageCache-iOS"
                ReferencedContainer = "container:STXImageCache.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F233A1E49C73700B6E08B"
-            BuildableName = "STXImageCache_iOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-iOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F233A1E49C73700B6E08B"
-            BuildableName = "STXImageCache_iOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-iOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>

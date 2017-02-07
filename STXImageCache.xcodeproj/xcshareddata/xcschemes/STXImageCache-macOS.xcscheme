@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE0F23C91E49CBF200B6E08B"
-               BuildableName = "STXImageCache_macOS.framework"
+               BuildableName = "STXImageCache.framework"
                BlueprintName = "STXImageCache-macOS"
                ReferencedContainer = "container:STXImageCache.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F23C91E49CBF200B6E08B"
-            BuildableName = "STXImageCache_macOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-macOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F23C91E49CBF200B6E08B"
-            BuildableName = "STXImageCache_macOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-macOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>

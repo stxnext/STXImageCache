@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE0F23DF1E49CCCD00B6E08B"
-               BuildableName = "STXImageCache_tvOS.framework"
+               BuildableName = "STXImageCache.framework"
                BlueprintName = "STXImageCache-tvOS"
                ReferencedContainer = "container:STXImageCache.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F23DF1E49CCCD00B6E08B"
-            BuildableName = "STXImageCache_tvOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-tvOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE0F23DF1E49CCCD00B6E08B"
-            BuildableName = "STXImageCache_tvOS.framework"
+            BuildableName = "STXImageCache.framework"
             BlueprintName = "STXImageCache-tvOS"
             ReferencedContainer = "container:STXImageCache.xcodeproj">
          </BuildableReference>

@@ -13,18 +13,9 @@ typealias CacheManagerCompletion = (Data?, Error?) -> ()
 final class CacheManager {
     static let shared = CacheManager()
     
+    let provider: Providing = NetworkProvider(childProvider: nil)
+    
     func image(atURL url: URL, completion: @escaping CacheManagerCompletion) {
-        let request = JSONRequest(url: url)
-        let _ = NetworkManager.GET(request: request).execute { result in
-            switch result {
-            case .error(error: let error):
-                completion(nil, error)
-            case .failed(code: let code, description: let description):
-                let error = NSError(domain: "com.stxnext.STXImageCache.HTTPError", code: code, userInfo: [NSLocalizedDescriptionKey: description])
-                completion(nil, error)
-            case .success(code: _, data: let data):
-                completion(data, nil)
-            }
-        }
+        provider.get(fromURL: url, completion: completion)
     }
 }

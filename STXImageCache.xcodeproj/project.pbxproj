@@ -94,6 +94,14 @@
 		AE0F248C1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */; };
 		AE0F248E1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */; };
 		AE0F24921E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */; };
+		AE0F24971E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
+		AE0F24981E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
+		AE0F24991E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
+		AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
+		AE0F249C1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
+		AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
+		AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
+		AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,6 +274,8 @@
 		AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+ImageViewExtensions.swift"; sourceTree = "<group>"; };
 		AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+UIButtonExtensions.swift"; sourceTree = "<group>"; };
 		AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
+		AE0F24961E4A194100B6E08B /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		AE0F249B1E4A199E00B6E08B /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0F24111E49D98A00B6E08B /* Networking */,
+				AE0F24951E4A191D00B6E08B /* Providers */,
 				AE0F24581E49DFA500B6E08B /* STXImageCache.swift */,
 				AE0F24661E49ED1900B6E08B /* CacheManager.swift */,
 				AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */,
@@ -487,6 +498,15 @@
 				AE0F24531E49DCAF00B6E08B /* JSONRequest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE0F24951E4A191D00B6E08B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				AE0F249B1E4A199E00B6E08B /* Providing.swift */,
+				AE0F24961E4A194100B6E08B /* NetworkProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -869,11 +889,13 @@
 				AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F241F1E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F243F1E49D98A00B6E08B /* NetworkManager.swift in Sources */,
+				AE0F249C1E4A199E00B6E08B /* Providing.swift in Sources */,
 				AE0F242B1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
 				AE0F248C1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */,
 				AE0F24231E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
 				AE0F248A1E4A004800B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244B1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
+				AE0F24971E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,11 +939,13 @@
 				AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24201E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24401E49D98A00B6E08B /* NetworkManager.swift in Sources */,
+				AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */,
 				AE0F24921E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift in Sources */,
 				AE0F242C1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
 				AE0F24241E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
 				AE0F24891E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244C1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
+				AE0F24981E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,11 +962,13 @@
 				AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24211E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24411E49D98A00B6E08B /* NetworkManager.swift in Sources */,
+				AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */,
 				AE0F242D1E49D98A00B6E08B /* HTTPResult.swift in Sources */,
 				AE0F248E1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift in Sources */,
 				AE0F24251E49D98A00B6E08B /* HTTPNetworking.swift in Sources */,
 				AE0F24881E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */,
 				AE0F244D1E49D98A00B6E08B /* QueryItemsConverter.swift in Sources */,
+				AE0F24991E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,7 +982,9 @@
 				AE0F24461E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F246A1E49ED1900B6E08B /* CacheManager.swift in Sources */,
 				AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */,
+				AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */,
 				AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
+				AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 				AE0F24221E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24421E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F242E1E49D98A00B6E08B /* HTTPResult.swift in Sources */,

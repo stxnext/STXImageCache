@@ -36,6 +36,7 @@ enum NetworkManager: HTTPNetworking {
         let urlSession = URLSession(configuration: URLSessionConfiguration.default)
         let urlTask = urlSession.dataTask(with: urlRequest, completionHandler: urlSessionCompletion(completion: completion))
         urlTask.resume()
+        urlSession.finishTasksAndInvalidate()
         return urlRequest
     }
     

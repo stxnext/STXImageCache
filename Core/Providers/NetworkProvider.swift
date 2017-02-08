@@ -12,15 +12,17 @@ struct NetworkProvider: Providing {
     let childProvider: Providing?
     
     fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
-        childProvider?.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+        guard let childProvider = childProvider else {
+            completion(nil, nil)
+            return
+        }
+        childProvider.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
     }
 }
 
 extension NetworkProvider {
     func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
-        guard
-            (forceRefresh == false || childProvider == nil)
-        else {
+        if forceRefresh && childProvider != nil {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return
         }

@@ -20,7 +20,11 @@ struct MemoryProvider: Providing {
     }
     
     fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
-        childProvider?.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
+        guard let childProvider = childProvider else {
+            completion(nil, nil)
+            return
+        }
+        childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
             }
@@ -35,8 +39,11 @@ struct MemoryProvider: Providing {
 
 extension MemoryProvider {
     func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+        if forceRefresh && childProvider != nil {
+            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+            return
+        }
         guard
-            (forceRefresh == false || childProvider == nil),
             let data = memoryCache.object(forKey: url as NSURL)
         else {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)

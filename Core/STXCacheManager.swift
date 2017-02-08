@@ -38,4 +38,9 @@ public final class STXCacheManager {
     public func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping STXCacheManagerCompletion) {
         provider.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
     }
+    
+    public func clearCache() {
+        provider = nil
+        StorageProvider(childProvider: nil).clearCache()
+    }
 }

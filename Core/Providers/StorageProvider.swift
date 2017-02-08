@@ -24,12 +24,25 @@ struct StorageProvider: Providing {
     }
     
     fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
-        childProvider?.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
+        guard let childProvider = childProvider else {
+            completion(nil, nil)
+            return
+        }
+        childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
             }
             completion(data, error)
         }
+    }
+    
+    func clearCache() {
+        guard
+            let cacheDirectory = self.cacheDirectory
+        else {
+            return
+        }
+        try? fileManager.removeItem(atPath: cacheDirectory)
     }
     
     private func store(data: Data, atURL url: URL) {
@@ -88,8 +101,11 @@ struct StorageProvider: Providing {
 
 extension StorageProvider {
     func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+        if forceRefresh && childProvider != nil {
+            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+            return
+        }
         guard
-            (forceRefresh == false || childProvider == nil),
             let path = pathFromURL(url: url),
             fileManager.fileExists(atPath: path) == true
         else {

@@ -102,6 +102,10 @@
 		AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
 		AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
 		AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
+		AE0F24A61E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
+		AE0F24A71E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
+		AE0F24A81E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
+		AE0F24A91E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +280,7 @@
 		AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
 		AE0F24961E4A194100B6E08B /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		AE0F249B1E4A199E00B6E08B /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
+		AE0F24A51E4B017800B6E08B /* StorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +510,7 @@
 			children = (
 				AE0F249B1E4A199E00B6E08B /* Providing.swift */,
 				AE0F24961E4A194100B6E08B /* NetworkProvider.swift */,
+				AE0F24A51E4B017800B6E08B /* StorageProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -882,6 +888,7 @@
 			files = (
 				AE0F24271E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F244F1E49D98A00B6E08B /* Request.swift in Sources */,
+				AE0F24A61E4B017800B6E08B /* StorageProvider.swift in Sources */,
 				AE0F24541E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24431E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24671E49ED1900B6E08B /* CacheManager.swift in Sources */,
@@ -932,6 +939,7 @@
 			files = (
 				AE0F24281E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24501E49D98A00B6E08B /* Request.swift in Sources */,
+				AE0F24A71E4B017800B6E08B /* StorageProvider.swift in Sources */,
 				AE0F24551E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24441E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24681E49ED1900B6E08B /* CacheManager.swift in Sources */,
@@ -955,6 +963,7 @@
 			files = (
 				AE0F24291E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24511E49D98A00B6E08B /* Request.swift in Sources */,
+				AE0F24A81E4B017800B6E08B /* StorageProvider.swift in Sources */,
 				AE0F24561E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24451E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24691E49ED1900B6E08B /* CacheManager.swift in Sources */,
@@ -976,6 +985,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0F24A91E4B017800B6E08B /* StorageProvider.swift in Sources */,
 				AE0F242A1E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24521E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24571E49DCAF00B6E08B /* JSONRequest.swift in Sources */,

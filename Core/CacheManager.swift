@@ -13,7 +13,7 @@ typealias CacheManagerCompletion = (Data?, Error?) -> ()
 final class CacheManager {
     static let shared = CacheManager()
     
-    let provider: Providing = StorageProvider(childProvider: NetworkProvider(childProvider: nil))
+    let provider: Providing = MemoryProvider(childProvider: StorageProvider(childProvider: NetworkProvider(childProvider: nil)))
     
     func image(atURL url: URL, completion: @escaping CacheManagerCompletion) {
         provider.get(fromURL: url, completion: completion)

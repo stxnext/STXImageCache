@@ -9,6 +9,11 @@
 import Foundation
 
 public struct STXMemoryCacheConfig {
-    public var enabled = true
-    public var maximumMemoryCacheSize: UInt = 0
+    public var enabled: Bool
+    public var maximumMemoryCacheSize: UInt
+    
+    public init(enabled: Bool = true, maximumMemoryCacheSize: UInt = 0) {
+        self.enabled = enabled
+        self.maximumMemoryCacheSize = maximumMemoryCacheSize
+    }
 }

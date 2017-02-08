@@ -35,7 +35,7 @@ public final class STXCacheManager {
         return rootProvider
     }()
     
-    func image(atURL url: URL, completion: @escaping STXCacheManagerCompletion) {
+    public func image(atURL url: URL, completion: @escaping STXCacheManagerCompletion) {
         provider.get(fromURL: url, completion: completion)
     }
 }

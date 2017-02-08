@@ -15,11 +15,11 @@ struct StorageProvider: Providing {
     }
     
     let childProvider: Providing?
-    let expirationTime: UInt?
+    let expirationTime: UInt
     
-    init(childProvider: Providing?, expirationTime: UInt? = nil) {
+    init(childProvider: Providing?, expirationTime: UInt = 0) {
         self.childProvider = childProvider
-        self.expirationTime = expirationTime
+        self.expirationTime = expirationTime * 24 * 3600
         clearExpiredCache()
     }
     
@@ -52,13 +52,13 @@ struct StorageProvider: Providing {
     
     private func clearExpiredCache() {
         guard
-            let expirationTime = self.expirationTime,
+            self.expirationTime != 0,
             let cacheDirectory = self.cacheDirectory
         else {
             return
         }
         let resourceKeys: Set<URLResourceKey> = [.isDirectoryKey, .contentAccessDateKey, .totalFileAllocatedSizeKey]
-        let expirationDate = Date(timeIntervalSinceNow: TimeInterval(24 * 3600 * expirationTime))
+        let expirationDate = Date(timeIntervalSinceNow: -TimeInterval(self.expirationTime))
         
         let cacheURL = URL(fileURLWithPath: cacheDirectory, isDirectory: true)
         let fileEnumerator = fileManager.enumerator(at: cacheURL, includingPropertiesForKeys: Array(resourceKeys), options: .skipsHiddenFiles, errorHandler: nil)

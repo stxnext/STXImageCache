@@ -15,6 +15,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var diskConfig = STXDiskCacheConfig()
+        diskConfig.enabled = true
+        diskConfig.diskExpirationTime = 7 // in days, 0 = never
+        STXCacheManager.shared.diskCacheConfig = diskConfig
+        
+        var memoryConfig = STXMemoryCacheConfig()
+        memoryConfig.enabled = true
+        memoryConfig.maximumMemoryCacheSize = 50 // in megabytes, 0 = unlimited
+        STXCacheManager.shared.memoryCacheConfig = memoryConfig
+        
         let url = URL(string: "https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg")!
         firstImageView.stx.image(atURL: url)
         button.stx.image(atURL: url)

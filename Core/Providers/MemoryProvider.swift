@@ -16,7 +16,7 @@ struct MemoryProvider: Providing {
     
     init(childProvider: Providing?, maximumMemoryCacheSize: UInt = 0) {
         self.childProvider = childProvider
-        self.maximumMemoryCacheSize = maximumMemoryCacheSize
+        self.maximumMemoryCacheSize = maximumMemoryCacheSize * 1024 * 1024
     }
     
     fileprivate func getFromChildProvider(fromURL url: URL, completion: @escaping (Data?, Error?) -> ()) {

@@ -10,7 +10,7 @@ import AppKit
 
 extension STXImageCache where Base: Button {
     public func image(atURL url: URL) {
-        CacheManager.shared.image(atURL: url) { data, error in
+        CacheManager.shared.image(atURL: url, forceRefresh: Bool = false) { data, error in
             if let data = data {
                 DispatchQueue.main.async {
                     self.base.image = Image(data: data)

@@ -12,5 +12,5 @@ typealias GetCompletion = (Data?, Error?) -> ()
 
 protocol Providing {
     var childProvider: Providing? { get }
-    func get(fromURL url: URL, completion: @escaping GetCompletion)
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping GetCompletion)
 }

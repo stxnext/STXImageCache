@@ -23,8 +23,8 @@ struct StorageProvider: Providing {
         clearExpiredCache()
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, completion: @escaping (Data?, Error?) -> ()) {
-        childProvider?.get(fromURL: url) { data, error in
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+        childProvider?.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
             }
@@ -87,12 +87,13 @@ struct StorageProvider: Providing {
 }
 
 extension StorageProvider {
-    func get(fromURL url: URL, completion: @escaping (Data?, Error?) -> ()) {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
         guard
+            (forceRefresh == false || childProvider == nil),
             let path = pathFromURL(url: url),
             fileManager.fileExists(atPath: path) == true
         else {
-            getFromChildProvider(fromURL: url, completion: completion)
+            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return
         }
         let fileURL = URL(fileURLWithPath: path)

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         var diskConfig = STXDiskCacheConfig()
         diskConfig.enabled = true
-        diskConfig.diskExpirationTime = 7 // in days, 0 = never
+        diskConfig.diskExpirationTime = 7 // in days, 0 = never (dependent on iOS)
         STXCacheManager.shared.diskCacheConfig = diskConfig
         
         var memoryConfig = STXMemoryCacheConfig()

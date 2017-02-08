@@ -22,7 +22,7 @@ extension STXImageCache where Base: Button {
     }
     
     private func image(atURL url: URL, completion: @escaping (Image?, Error?) -> ()) {
-        CacheManager.shared.image(atURL: url) { data, error in
+        STXCacheManager.shared.image(atURL: url) { data, error in
             if let data = data {
                 DispatchQueue.main.async {
                     completion(Image(data: data), error)

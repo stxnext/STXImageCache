@@ -16,7 +16,7 @@
 
 extension STXImageCache where Base: ImageView {
     public func image(atURL url: URL) {
-        CacheManager.shared.image(atURL: url) { data, error in
+        STXCacheManager.shared.image(atURL: url) { data, error in
             if let data = data {
                 DispatchQueue.main.async {
                     self.setImage(image: Image(data: data))

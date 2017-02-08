@@ -9,14 +9,15 @@
 import Foundation
 
 struct MemoryProvider: Providing {
-    fileprivate let memoryCache: NSCache<NSURL, NSData> = {
-        var cache = NSCache<NSURL, NSData>()
-        cache.countLimit = 100
-        cache.totalCostLimit = 1024 * 1024 * 50
-        return cache
-    }()
+    fileprivate let memoryCache = NSCache<NSURL, NSData>()
     
     let childProvider: Providing?
+    let maximumMemoryCacheSize: UInt
+    
+    init(childProvider: Providing?, maximumMemoryCacheSize: UInt = 0) {
+        self.childProvider = childProvider
+        self.maximumMemoryCacheSize = maximumMemoryCacheSize
+    }
     
     fileprivate func getFromChildProvider(fromURL url: URL, completion: @escaping (Data?, Error?) -> ()) {
         childProvider?.get(fromURL: url) { data, error in

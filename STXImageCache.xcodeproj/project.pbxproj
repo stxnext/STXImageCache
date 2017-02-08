@@ -83,10 +83,10 @@
 		AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */; };
 		AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */; };
 		AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */; };
-		AE0F24671E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
-		AE0F24681E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
-		AE0F24691E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
-		AE0F246A1E49ED1900B6E08B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* CacheManager.swift */; };
+		AE0F24671E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
+		AE0F24681E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
+		AE0F24691E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
+		AE0F246A1E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
 		AE0F24871E49FE2000B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
 		AE0F24881E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
 		AE0F24891E4A004700B6E08B /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */; };
@@ -110,6 +110,14 @@
 		AE0F24AC1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
 		AE0F24AD1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
 		AE0F24AE1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
+		AE0F24B01E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
+		AE0F24B11E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
+		AE0F24B21E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
+		AE0F24B31E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
+		AE0F24B51E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
+		AE0F24B61E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
+		AE0F24B71E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
+		AE0F24B81E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,7 +286,7 @@
 		AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
 		AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
 		AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
-		AE0F24661E49ED1900B6E08B /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXCacheManager.swift; sourceTree = "<group>"; };
 		AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+ImageViewExtensions.swift"; sourceTree = "<group>"; };
 		AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+UIButtonExtensions.swift"; sourceTree = "<group>"; };
 		AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
@@ -286,6 +294,8 @@
 		AE0F249B1E4A199E00B6E08B /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
 		AE0F24A51E4B017800B6E08B /* StorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProvider.swift; sourceTree = "<group>"; };
+		AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfig.swift; sourceTree = "<group>"; };
+		AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,7 +451,9 @@
 				AE0F24111E49D98A00B6E08B /* Networking */,
 				AE0F24951E4A191D00B6E08B /* Providers */,
 				AE0F24581E49DFA500B6E08B /* STXImageCache.swift */,
-				AE0F24661E49ED1900B6E08B /* CacheManager.swift */,
+				AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */,
+				AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */,
+				AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */,
 				AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */,
 				AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */,
 				AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */,
@@ -895,10 +907,12 @@
 				AE0F24271E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F244F1E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24A61E4B017800B6E08B /* StorageProvider.swift in Sources */,
+				AE0F24B01E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
 				AE0F24541E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
+				AE0F24B51E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
 				AE0F24431E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24AB1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24671E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24671E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F241F1E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
@@ -947,10 +961,12 @@
 				AE0F24281E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24501E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24A71E4B017800B6E08B /* StorageProvider.swift in Sources */,
+				AE0F24B11E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
 				AE0F24551E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
+				AE0F24B61E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
 				AE0F24441E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24AC1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24681E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24681E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24201E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
@@ -972,10 +988,12 @@
 				AE0F24291E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24511E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24A81E4B017800B6E08B /* StorageProvider.swift in Sources */,
+				AE0F24B21E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
 				AE0F24561E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
+				AE0F24B71E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
 				AE0F24451E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
 				AE0F24AD1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24691E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F24691E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F24211E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
@@ -995,16 +1013,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0F24A91E4B017800B6E08B /* StorageProvider.swift in Sources */,
+				AE0F24B31E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
 				AE0F242A1E49D98A00B6E08B /* HTTPResponseSuccess.swift in Sources */,
 				AE0F24521E49D98A00B6E08B /* Request.swift in Sources */,
 				AE0F24571E49DCAF00B6E08B /* JSONRequest.swift in Sources */,
 				AE0F24461E49D98A00B6E08B /* NetworkManagerError.swift in Sources */,
-				AE0F246A1E49ED1900B6E08B /* CacheManager.swift in Sources */,
+				AE0F246A1E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */,
 				AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 				AE0F24221E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
+				AE0F24B81E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
 				AE0F24421E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F24AE1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
 				AE0F242E1E49D98A00B6E08B /* HTTPResult.swift in Sources */,

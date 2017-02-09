@@ -20,12 +20,12 @@ struct MemoryProvider: Providing {
         self.maximumMemoryCacheSize = maximumMemoryCacheSize * 1024 * 1024
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
             completion(nil, nil)
-            return
+            return nil
         }
-        childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
+        return childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
                 self.threadsManager.unlock(forObject: url)
@@ -40,19 +40,18 @@ struct MemoryProvider: Providing {
 }
 
 extension MemoryProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
-            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
-            return
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
         }
         threadsManager.lock(forObject: url)
         guard
             let data = memoryCache.object(forKey: url as NSURL)
         else {
-            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
-            return
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
         }
         threadsManager.unlock(forObject: url)
         completion(data as Data, nil)
+        return nil
     }
 }

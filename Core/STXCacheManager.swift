@@ -8,12 +8,13 @@
 
 import Foundation
 
-public typealias STXCacheManagerCompletion = (Data?, Error?) -> ()
-
 public final class STXCacheManager {
     public static let shared = STXCacheManager()
-    private let concurrentTasksLimit = DispatchSemaphore(value: 10)
-    private let concurrentQueue = DispatchQueue(label: "Operation queue", qos: .background, attributes: .concurrent)
+    private let operationQueue: OperationQueue = {
+        var operationQueue = OperationQueue()
+        operationQueue.maxConcurrentOperationCount = 10
+        return operationQueue
+    }()
     private let serialQueue = DispatchQueue(label: "Serial queue")
     
     public var diskCacheConfig: STXDiskCacheConfig = STXDiskCacheConfig() {
@@ -30,10 +31,16 @@ public final class STXCacheManager {
     private lazy var _provider: Providing! = {
         var rootProvider: Providing = NetworkProvider(childProvider: nil)
         if self.diskCacheConfig.enabled {
-            rootProvider = StorageProvider(childProvider: rootProvider, expirationTime: self.diskCacheConfig.cacheExpirationTime)
+            rootProvider = StorageProvider(
+                childProvider: rootProvider,
+                expirationTime: self.diskCacheConfig.cacheExpirationTime
+            )
         }
         if self.memoryCacheConfig.enabled {
-            rootProvider = MemoryProvider(childProvider: rootProvider, maximumMemoryCacheSize: self.memoryCacheConfig.maximumMemoryCacheSize)
+            rootProvider = MemoryProvider(
+                childProvider: rootProvider,
+                maximumMemoryCacheSize: self.memoryCacheConfig.maximumMemoryCacheSize
+            )
         }
         return rootProvider
     }()
@@ -51,14 +58,17 @@ public final class STXCacheManager {
         }
     }
     
-    public func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping STXCacheManagerCompletion) {
-        self.concurrentTasksLimit.wait()
-        concurrentQueue.async {
-            self.provider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
-                completion(data, error)
-                self.concurrentTasksLimit.signal()
-            }
-        }
+    @discardableResult
+    public func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping STXImageOperationCompletion) -> STXImageOperation {
+        let task = Task(
+            url: url,
+            forceRefresh: forceRefresh,
+            provider: provider,
+            completion: completion
+        )
+        let operation = STXImageOperation(task: task)
+        operationQueue.addOperation(task)
+        return operation
     }
     
     public func clearCache() {

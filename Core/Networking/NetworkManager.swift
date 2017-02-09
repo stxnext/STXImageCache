@@ -14,7 +14,7 @@ typealias NetworkManagerCompletion = (HTTPResult<Data, Data, NetworkManagerError
 enum NetworkManager: HTTPNetworking {
     case GET(request: Request)
     
-    func execute(completion: @escaping NetworkManagerCompletion) -> URLRequest {
+    func execute(completion: @escaping NetworkManagerCompletion) -> URLSessionTask {
         var httpRequest: URLRequest!
         switch self {
         case .GET(request: let request):
@@ -32,11 +32,11 @@ enum NetworkManager: HTTPNetworking {
         return httpRequest
     }
     
-    private func performRequest(urlRequest: URLRequest, completion: @escaping NetworkManagerCompletion) -> URLRequest {
+    private func performRequest(urlRequest: URLRequest, completion: @escaping NetworkManagerCompletion) -> URLSessionTask {
         let urlSession = URLSession.shared
         let urlTask = urlSession.dataTask(with: urlRequest, completionHandler: urlSessionCompletion(completion: completion))
         urlTask.resume()
-        return urlRequest
+        return urlTask
     }
     
     private func urlSessionCompletion(completion: @escaping NetworkManagerCompletion) -> URLSessionCompletion {

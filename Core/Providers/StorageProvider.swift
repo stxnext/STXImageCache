@@ -24,13 +24,13 @@ struct StorageProvider: Providing {
         clearExpiredCache()
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
             self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
-            return
+            return nil
         }
-        childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
+        return childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 DispatchQueue.global().async {
                     self.store(data: data, atURL: url)
@@ -107,20 +107,18 @@ struct StorageProvider: Providing {
 }
 
 extension StorageProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
-            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
-            return
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
         }
         threadsManager.lock(forObject: url)
         guard
             let path = pathFromURL(url: url),
             fileManager.fileExists(atPath: path) == true
         else {
-            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh) { data, error in
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh) { data, error in
                 completion(data, error)
             }
-            return
         }
         let fileURL = URL(fileURLWithPath: path)
         do {
@@ -131,5 +129,6 @@ extension StorageProvider {
             completion(nil, error)
         }
         threadsManager.unlock(forObject: url)
+        return nil
     }
 }

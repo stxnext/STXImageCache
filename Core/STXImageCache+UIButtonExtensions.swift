@@ -9,20 +9,22 @@
 import UIKit
 
 extension STXImageCache where Base: Button {
-    public func image(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) {
-        image(atURL: url, forceRefresh: forceRefresh) { image, error in
+    @discardableResult
+    public func image(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+        return image(atURL: url, forceRefresh: forceRefresh) { image, error in
             self.base.setImage(image?.withRenderingMode(renderingMode), for: controlState)
         }
     }
     
-    public func backgroundImage(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) {
-        image(atURL: url, forceRefresh: forceRefresh) { image, error in
+    @discardableResult
+    public func backgroundImage(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+        return image(atURL: url, forceRefresh: forceRefresh) { image, error in
             self.base.setBackgroundImage(image?.withRenderingMode(renderingMode), for: controlState)
         }
     }
     
-    private func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping (Image?, Error?) -> ()) {
-        STXCacheManager.shared.image(atURL: url, forceRefresh: forceRefresh) { data, error in
+    private func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping (Image?, Error?) -> ()) -> STXImageOperation {
+        return STXCacheManager.shared.image(atURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 DispatchQueue.main.async {
                     completion(Image(data: data), error)

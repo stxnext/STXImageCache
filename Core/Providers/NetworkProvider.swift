@@ -16,18 +16,18 @@ struct NetworkProvider: Providing {
             completion(nil, nil)
             return
         }
-        childProvider.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+        _ = childProvider.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
     }
 }
 
 extension NetworkProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
-            return
+            return nil
         }
         let request = JSONRequest(url: url)
-        let _ = NetworkManager.GET(request: request).execute { result in
+        return NetworkManager.GET(request: request).execute { result in
             switch result {
             case .error(error: let error):
                 guard self.childProvider != nil else {

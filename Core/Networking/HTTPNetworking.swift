@@ -12,5 +12,5 @@ protocol HTTPNetworking {
     associatedtype Object
     associatedtype ErrorObject
     associatedtype ErrorType
-    func execute(completion: @escaping (HTTPResult<Object, ErrorObject, ErrorType>) -> ()) -> URLRequest
+    func execute(completion: @escaping (HTTPResult<Object, ErrorObject, ErrorType>) -> ()) -> URLSessionTask
 }

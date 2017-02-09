@@ -9,6 +9,7 @@
 import Foundation
 
 struct StorageProvider: Providing {
+    fileprivate let threadsManager = ThreadsManager<URL>()
     fileprivate let fileManager = FileManager()
     fileprivate var cacheDirectory: String? {
         return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first?.appending("/STXImageCache")
@@ -25,12 +26,18 @@ struct StorageProvider: Providing {
     
     fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
         guard let childProvider = childProvider else {
+            self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
             return
         }
         childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
-                self.store(data: data, atURL: url)
+                DispatchQueue.global().async {
+                    self.store(data: data, atURL: url)
+                    self.threadsManager.unlock(forObject: url)
+                }
+            } else {
+                self.threadsManager.unlock(forObject: url)
             }
             completion(data, error)
         }
@@ -105,11 +112,14 @@ extension StorageProvider {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return
         }
+        threadsManager.lock(forObject: url)
         guard
             let path = pathFromURL(url: url),
             fileManager.fileExists(atPath: path) == true
         else {
-            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+            getFromChildProvider(fromURL: url, forceRefresh: forceRefresh) { data, error in
+                completion(data, error)
+            }
             return
         }
         let fileURL = URL(fileURLWithPath: path)
@@ -120,5 +130,6 @@ extension StorageProvider {
         } catch {
             completion(nil, error)
         }
+        threadsManager.unlock(forObject: url)
     }
 }

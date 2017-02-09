@@ -118,6 +118,10 @@
 		AE0F24B61E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
 		AE0F24B71E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
 		AE0F24B81E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
+		AE4C29971E4C5589007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
+		AE4C29981E4C5589007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
+		AE4C29991E4C558A007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
+		AE4C299A1E4C558A007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +300,7 @@
 		AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProvider.swift; sourceTree = "<group>"; };
 		AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfig.swift; sourceTree = "<group>"; };
 		AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfig.swift; sourceTree = "<group>"; };
+		AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +462,7 @@
 				AE0F246B1E49F05200B6E08B /* STXImageCache+ImageViewExtensions.swift */,
 				AE0F248B1E4A048D00B6E08B /* STXImageCache+UIButtonExtensions.swift */,
 				AE0F24901E4A059500B6E08B /* STXImageCache+NSButtonExtensions.swift */,
+				AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -915,6 +921,7 @@
 				AE0F24671E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */,
+				AE4C29971E4C5589007EAB75 /* ThreadsManager.swift in Sources */,
 				AE0F241F1E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F243F1E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F249C1E4A199E00B6E08B /* Providing.swift in Sources */,
@@ -969,6 +976,7 @@
 				AE0F24681E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
+				AE4C29981E4C5589007EAB75 /* ThreadsManager.swift in Sources */,
 				AE0F24201E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24401E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */,
@@ -996,6 +1004,7 @@
 				AE0F24691E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
+				AE4C29991E4C558A007EAB75 /* ThreadsManager.swift in Sources */,
 				AE0F24211E49D98A00B6E08B /* HTTPMethod.swift in Sources */,
 				AE0F24411E49D98A00B6E08B /* NetworkManager.swift in Sources */,
 				AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */,
@@ -1021,6 +1030,7 @@
 				AE0F246A1E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
 				AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */,
 				AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */,
+				AE4C299A1E4C558A007EAB75 /* ThreadsManager.swift in Sources */,
 				AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
 				AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */,
 				AE0F24221E49D98A00B6E08B /* HTTPMethod.swift in Sources */,

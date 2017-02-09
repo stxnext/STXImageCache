@@ -9,6 +9,7 @@
 import Foundation
 
 struct MemoryProvider: Providing {
+    fileprivate let threadsManager = ThreadsManager<URL>()
     fileprivate let memoryCache = NSCache<NSURL, NSData>()
     
     let childProvider: Providing?
@@ -27,6 +28,7 @@ struct MemoryProvider: Providing {
         childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
+                self.threadsManager.unlock(forObject: url)
             }
             completion(data, error)
         }
@@ -43,12 +45,14 @@ extension MemoryProvider {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return
         }
+        threadsManager.lock(forObject: url)
         guard
             let data = memoryCache.object(forKey: url as NSURL)
         else {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return
         }
+        threadsManager.unlock(forObject: url)
         completion(data as Data, nil)
     }
 }

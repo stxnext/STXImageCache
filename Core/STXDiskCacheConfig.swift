@@ -10,10 +10,10 @@ import Foundation
 
 public struct STXDiskCacheConfig {
     public var enabled: Bool
-    public var diskExpirationTime: UInt
+    public var cacheExpirationTime: UInt
     
-    public init(enabled: Bool = true, diskExpirationTime: UInt = 7) {
+    public init(enabled: Bool = true, cacheExpirationTime: UInt = 7) {
         self.enabled = enabled
-        self.diskExpirationTime = diskExpirationTime
+        self.cacheExpirationTime = cacheExpirationTime
     }
 }

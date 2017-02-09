@@ -30,7 +30,7 @@ public final class STXCacheManager {
     private lazy var _provider: Providing! = {
         var rootProvider: Providing = NetworkProvider(childProvider: nil)
         if self.diskCacheConfig.enabled {
-            rootProvider = StorageProvider(childProvider: rootProvider, expirationTime: self.diskCacheConfig.diskExpirationTime)
+            rootProvider = StorageProvider(childProvider: rootProvider, expirationTime: self.diskCacheConfig.cacheExpirationTime)
         }
         if self.memoryCacheConfig.enabled {
             rootProvider = MemoryProvider(childProvider: rootProvider, maximumMemoryCacheSize: self.memoryCacheConfig.maximumMemoryCacheSize)

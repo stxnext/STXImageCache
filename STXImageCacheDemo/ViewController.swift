@@ -26,9 +26,20 @@ class ViewController: UIViewController {
         memoryConfig.maximumMemoryCacheSize = 50 // in megabytes, 0 = unlimited
         STXCacheManager.shared.memoryCacheConfig = memoryConfig
         
+        for i in 0...1000 {
+            let url = URL(string: "https://unsplash.it/200/300/?random")!
+            STXCacheManager.shared.image(atURL: url, forceRefresh: true, completion: { data, error in
+                if let data = data {
+                    print(i)
+                }
+            })
+        }
+        
         let url = URL(string: "https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg")!
         firstImageView.stx.image(atURL: url)
         button.stx.image(atURL: url)
+        
+        STXCacheManager.shared.clearCache()
     }
 }
 

@@ -33,10 +33,9 @@ enum NetworkManager: HTTPNetworking {
     }
     
     private func performRequest(urlRequest: URLRequest, completion: @escaping NetworkManagerCompletion) -> URLRequest {
-        let urlSession = URLSession(configuration: URLSessionConfiguration.default)
+        let urlSession = URLSession.shared
         let urlTask = urlSession.dataTask(with: urlRequest, completionHandler: urlSessionCompletion(completion: completion))
         urlTask.resume()
-        urlSession.finishTasksAndInvalidate()
         return urlRequest
     }
     

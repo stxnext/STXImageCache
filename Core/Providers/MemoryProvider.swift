@@ -22,14 +22,15 @@ struct MemoryProvider: Providing {
     
     fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
+            self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
             return nil
         }
         return childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 self.store(data: data, atURL: url)
-                self.threadsManager.unlock(forObject: url)
             }
+            self.threadsManager.unlock(forObject: url)
             completion(data, error)
         }
     }

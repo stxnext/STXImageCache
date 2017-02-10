@@ -26,7 +26,12 @@ final class Task: Operation {
         if isCancelled {
             return
         }
-        urlSessionTask = provider.get(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+        let semaphore = DispatchSemaphore(value: 0)
+        urlSessionTask = provider.get(fromURL: url, forceRefresh: forceRefresh) { [weak self] data, error in
+            self?.completion(data, error)
+            semaphore.signal()
+        }
+        semaphore.wait()
     }
     
     override func cancel() {

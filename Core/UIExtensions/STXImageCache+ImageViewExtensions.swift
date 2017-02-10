@@ -16,7 +16,12 @@
 
 extension STXImageCache where Base: ImageView {
     @discardableResult
-    public func image(atURL url: URL, forceRefresh: Bool = false) -> STXImageOperation {
+    public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false) -> STXImageOperation {
+        if let placeholderImage = placeholder {
+            DispatchQueue.main.async {
+                self.setImage(image: placeholderImage)
+            }
+        }
         return STXCacheManager.shared.image(atURL: url, forceRefresh: forceRefresh) { data, error in
             if let data = data {
                 DispatchQueue.main.async {

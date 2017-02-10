@@ -10,14 +10,24 @@ import UIKit
 
 extension STXImageCache where Base: Button {
     @discardableResult
-    public func image(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+    public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+        if let placeholderImage = placeholder {
+            DispatchQueue.main.async {
+                self.base.setImage(placeholderImage.withRenderingMode(renderingMode), for: controlState)
+            }
+        }
         return image(atURL: url, forceRefresh: forceRefresh) { image, error in
             self.base.setImage(image?.withRenderingMode(renderingMode), for: controlState)
         }
     }
     
     @discardableResult
-    public func backgroundImage(atURL url: URL, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+    public func backgroundImage(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal) -> STXImageOperation {
+        if let placeholderImage = placeholder {
+            DispatchQueue.main.async {
+                self.base.setImage(placeholderImage.withRenderingMode(renderingMode), for: controlState)
+            }
+        }
         return image(atURL: url, forceRefresh: forceRefresh) { image, error in
             self.base.setBackgroundImage(image?.withRenderingMode(renderingMode), for: controlState)
         }

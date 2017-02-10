@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         var memoryConfig = STXMemoryCacheConfig()
         memoryConfig.enabled = true
-        memoryConfig.maximumMemoryCacheSize = 50 // in megabytes, 0 = unlimited
+        memoryConfig.maximumMemoryCacheSize = 5 // in megabytes, 0 = unlimited
         STXCacheManager.shared.memoryCacheConfig = memoryConfig
         // ---------------------
         

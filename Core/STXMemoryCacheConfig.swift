@@ -12,7 +12,7 @@ public struct STXMemoryCacheConfig {
     public var enabled: Bool
     public var maximumMemoryCacheSize: UInt
     
-    public init(enabled: Bool = true, maximumMemoryCacheSize: UInt = 0) {
+    public init(enabled: Bool = true, maximumMemoryCacheSize: UInt = 5) {
         self.enabled = enabled
         self.maximumMemoryCacheSize = maximumMemoryCacheSize
     }

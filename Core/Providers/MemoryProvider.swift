@@ -21,7 +21,7 @@ struct MemoryProvider: Providing {
         memoryCache.totalCostLimit = Int(self.maximumMemoryCacheSize)
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
             self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
@@ -42,7 +42,7 @@ struct MemoryProvider: Providing {
 }
 
 extension MemoryProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
             return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
         }

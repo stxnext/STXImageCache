@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias STXImageOperationCompletion = (Data?, Error?) -> ()
+public typealias STXImageOperationCompletion = (Data?, NSError?) -> ()
 
 public struct STXImageOperation {
     public var url: URL {

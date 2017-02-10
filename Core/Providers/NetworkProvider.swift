@@ -11,7 +11,7 @@ import Foundation
 struct NetworkProvider: Providing {
     let childProvider: Providing?
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) {
         guard let childProvider = childProvider else {
             completion(nil, nil)
             return
@@ -21,7 +21,7 @@ struct NetworkProvider: Providing {
 }
 
 extension NetworkProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
             getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
             return nil
@@ -31,7 +31,7 @@ extension NetworkProvider {
             switch result {
             case .error(error: let error):
                 guard self.childProvider != nil else {
-                    completion(nil, error)
+                    completion(nil, error as NSError)
                     return
                 }
                 self.getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)

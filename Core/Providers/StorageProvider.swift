@@ -24,7 +24,7 @@ struct StorageProvider: Providing {
         clearExpiredCache()
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
             self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
@@ -107,7 +107,7 @@ struct StorageProvider: Providing {
 }
 
 extension StorageProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, Error?) -> ()) -> URLSessionTask? {
+    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
             return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
         }
@@ -126,7 +126,7 @@ extension StorageProvider {
             let data = fileHandler.readDataToEndOfFile()
             completion(data, nil)
         } catch {
-            completion(nil, error)
+            completion(nil, error as NSError)
         }
         threadsManager.unlock(forObject: url)
         return nil

@@ -8,8 +8,27 @@
 
 import Foundation
 
-enum NetworkManagerError: Error {
+enum NetworkManagerError: CustomNSError {
     case connectionError(error: Error)
-    case serverError(error: [String])
     case noResponse
+    
+    var errorUserInfo: [String : Any] {
+        switch self {
+        case .connectionError(error: let error):
+            let cocoaError = error as NSError
+            return cocoaError.userInfo as? [String: Any] ?? [:]
+        case .noResponse:
+            return [NSLocalizedDescriptionKey: "No response"]
+        }
+    }
+    
+    var errorCode: Int {
+        switch self {
+        case .connectionError(error: let error):
+            let cocoaError = error as NSError
+            return cocoaError.code
+        case .noResponse:
+            return -1
+        }
+    }
 }

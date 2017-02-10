@@ -9,7 +9,7 @@
 import Foundation
 
 typealias URLSessionCompletion = (Data?, URLResponse?, Error?) -> ()
-typealias NetworkManagerCompletion = (HTTPResult<Data, Data, NetworkManagerError>) -> ()
+typealias NetworkManagerCompletion = (HTTPResult<Data, NetworkManagerError>) -> ()
 
 enum NetworkManager: HTTPNetworking {
     case GET(request: Request)

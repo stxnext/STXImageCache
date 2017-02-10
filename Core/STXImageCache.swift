@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias STXImageCacheCompletion = (Image?, NSError?) -> (Image?)
+
 public struct STXImageCache<Base> {
     let base: Base
     init(_ base: Base) {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum HTTPResult<Object, ErrorObject, ErrorType> {
+enum HTTPResult<Object, ErrorType> {
     case success(code: HTTPResponseSuccess, data: Object)
     case failed(code: Int, description: String)
     case error(error: ErrorType)

@@ -9,6 +9,5 @@
 import Foundation
 
 protocol Providing {
-    var childProvider: Providing? { get }
     func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask?
 }

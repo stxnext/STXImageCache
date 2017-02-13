@@ -29,7 +29,7 @@ public final class STXCacheManager {
     }
     
     private lazy var _provider: Providing! = {
-        var rootProvider: Providing = NetworkProvider(childProvider: nil)
+        var rootProvider: Providing = NetworkProvider()
         if self.diskCacheConfig.enabled {
             rootProvider = StorageProvider(
                 childProvider: rootProvider,

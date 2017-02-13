@@ -28,7 +28,13 @@ final class Task: Operation {
         }
         let semaphore = DispatchSemaphore(value: 0)
         urlSessionTask = provider.get(fromURL: url, forceRefresh: forceRefresh) { [weak self] data, error in
-            self?.completion(data, error)
+            guard let strongSelf = self else {
+                semaphore.signal()
+                return
+            }
+            if !strongSelf.isCancelled {
+                strongSelf.completion(data, error)
+            }
             semaphore.signal()
         }
         semaphore.wait()

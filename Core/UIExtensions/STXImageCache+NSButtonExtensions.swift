@@ -10,11 +10,9 @@ import AppKit
 
 extension STXImageCache where Base: Button {
     @discardableResult
-    public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
+    public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, progress: STXImageCacheProgress? = nil, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
         if let placeholderImage = placeholder {
-            DispatchQueue.main.async {
-                self.setImage(image: placeholderImage)
-            }
+            self.setImage(image: placeholderImage)
         }
         return STXCacheManager.shared.image(atURL: url, forceRefresh: forceRefresh) { data, error in
             var image: Image?

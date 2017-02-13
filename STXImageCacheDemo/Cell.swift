@@ -12,6 +12,7 @@ import STXImageCache
 final class Cell: UITableViewCell {
     var operation: STXImageOperation?
     @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var progress: UIProgressView!
     
     override func prepareForReuse() {
         operation?.cancel()
@@ -19,6 +20,17 @@ final class Cell: UITableViewCell {
     }
     
     func configure(url: String) {
-        operation = img.stx.image(atURL: URL(string: url)!, placeholder: UIImage(named: "placeholder"))
+        progress.progress = 0
+        self.progress.isHidden = false
+        operation = img.stx.image(atURL: URL(string: url)!, placeholder: UIImage(named: "placeholder"), progress: { progress in
+            DispatchQueue.main.async {
+                self.progress.setProgress(progress, animated: true)
+            }
+        }, completion: { image, _ in
+            DispatchQueue.main.async {
+                self.progress.isHidden = true
+            }
+            return image
+        })
     }
 }

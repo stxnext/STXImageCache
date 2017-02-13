@@ -9,6 +9,7 @@
 import Foundation
 
 public typealias STXImageCacheCompletion = (Image?, NSError?) -> (Image?)
+public typealias STXImageCacheProgress = (Float) -> ()
 
 public struct STXImageCache<Base> {
     let base: Base

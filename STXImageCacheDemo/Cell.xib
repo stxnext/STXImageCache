@@ -20,11 +20,22 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea2-WN-089">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
                     </imageView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Oy-jj-lP0">
+                        <rect key="frame" x="30" y="153.5" width="315" height="3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="1Uh-Ki-XBE"/>
+                        </constraints>
+                        <color key="progressTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="trackTintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </progressView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ea2-WN-089" secondAttribute="trailing" id="1v1-c2-oAp"/>
                     <constraint firstAttribute="bottom" secondItem="ea2-WN-089" secondAttribute="bottom" id="MOV-92-Xwz"/>
+                    <constraint firstAttribute="trailing" secondItem="5Oy-jj-lP0" secondAttribute="trailing" constant="30" id="Sho-Ob-3JI"/>
                     <constraint firstItem="ea2-WN-089" firstAttribute="top" secondItem="o6I-3j-Jch" secondAttribute="top" id="VHg-tx-ZLj"/>
+                    <constraint firstAttribute="bottom" secondItem="5Oy-jj-lP0" secondAttribute="bottom" constant="42" id="VIi-zz-utG"/>
+                    <constraint firstItem="5Oy-jj-lP0" firstAttribute="leading" secondItem="o6I-3j-Jch" secondAttribute="leading" constant="30" id="XPb-1n-foE"/>
                     <constraint firstItem="ea2-WN-089" firstAttribute="leading" secondItem="o6I-3j-Jch" secondAttribute="leading" id="oJk-iT-sJ0"/>
                 </constraints>
             </tableViewCellContentView>
@@ -32,6 +43,7 @@
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="img" destination="ea2-WN-089" id="XKB-Qh-Ruj"/>
+                <outlet property="progress" destination="5Oy-jj-lP0" id="DOv-5g-571"/>
             </connections>
             <point key="canvasLocation" x="-7.5" y="-23.5"/>
         </tableViewCell>

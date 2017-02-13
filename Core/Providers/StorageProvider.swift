@@ -24,13 +24,13 @@ struct StorageProvider: Providing {
         clearExpiredCache()
     }
     
-    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
+    fileprivate func getFromChildProvider(fromURL url: URL, forceRefresh: Bool, progress: ((Float) -> ())?, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         guard let childProvider = childProvider else {
             self.threadsManager.unlock(forObject: url)
             completion(nil, nil)
             return nil
         }
-        return childProvider.get(fromURL: url, forceRefresh: forceRefresh) { data, error in
+        return childProvider.get(fromURL: url, forceRefresh: forceRefresh, progress: progress) { data, error in
             if let data = data {
                 DispatchQueue.global().async {
                     self.store(data: data, atURL: url)
@@ -107,16 +107,16 @@ struct StorageProvider: Providing {
 }
 
 extension StorageProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
+    func get(fromURL url: URL, forceRefresh: Bool, progress: ((Float) -> ())?, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
         if forceRefresh && childProvider != nil {
-            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, completion: completion)
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, progress: progress, completion: completion)
         }
         threadsManager.lock(forObject: url)
         guard
             let path = pathFromURL(url: url),
             fileManager.fileExists(atPath: path) == true
         else {
-            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh) { data, error in
+            return getFromChildProvider(fromURL: url, forceRefresh: forceRefresh, progress: progress) { data, error in
                 completion(data, error)
             }
         }

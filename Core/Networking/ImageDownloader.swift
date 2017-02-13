@@ -8,10 +8,12 @@
 
 import Foundation
 
+typealias ImageDownloaderProgress = (Float) -> ()
 typealias ImageDownloaderCompletion = (Data?, NSError?) -> ()
 
 final class ImageDownloader: NSObject {
     fileprivate var completionBlocks: [Int: ImageDownloaderCompletion] = [:]
+    fileprivate var progressBlocks: [Int: ImageDownloaderProgress] = [:]
     private var urlSession: URLSession!
     
     override init() {
@@ -20,8 +22,9 @@ final class ImageDownloader: NSObject {
         urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
     }
     
-    func download(fromURL url: URL, completion: @escaping ImageDownloaderCompletion) -> URLSessionDownloadTask {
+    func download(fromURL url: URL, progress: ImageDownloaderProgress?, completion: @escaping ImageDownloaderCompletion) -> URLSessionDownloadTask {
         let urlTask = urlSession.downloadTask(with: url)
+        progressBlocks[urlTask.taskIdentifier] = progress
         completionBlocks[urlTask.taskIdentifier] = completion
         urlTask.resume()
         return urlTask
@@ -43,7 +46,13 @@ extension ImageDownloader: URLSessionDownloadDelegate {
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        //print(Float(totalBytesWritten)/Float(totalBytesExpectedToWrite))
+        guard
+            let progress = progressBlocks[downloadTask.taskIdentifier],
+            totalBytesExpectedToWrite != NSURLSessionTransferSizeUnknown
+        else {
+            return
+        }
+        progress(Float(totalBytesWritten)/Float(totalBytesExpectedToWrite))
     }
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -61,6 +70,7 @@ extension ImageDownloader: URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         defer {
             completionBlocks[task.taskIdentifier] = nil
+            progressBlocks[task.taskIdentifier] = nil
         }
         guard let error = error else {
             return

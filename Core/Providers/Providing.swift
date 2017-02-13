@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Providing {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask?
+    func get(fromURL url: URL, forceRefresh: Bool, progress: ((Float) -> ())?, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask?
 }

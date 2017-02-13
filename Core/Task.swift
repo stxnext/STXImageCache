@@ -12,13 +12,15 @@ final class Task: Operation {
     let url: URL
     let forceRefresh: Bool
     let provider: Providing
+    let progress: STXImageCacheProgress?
     let completion: STXImageOperationCompletion
     var urlSessionTask: URLSessionTask?
     
-    init(url: URL, forceRefresh: Bool, provider: Providing, completion: @escaping STXImageOperationCompletion) {
+    init(url: URL, forceRefresh: Bool, provider: Providing, progress: STXImageCacheProgress?, completion: @escaping STXImageOperationCompletion) {
         self.url = url
         self.forceRefresh = forceRefresh
         self.provider = provider
+        self.progress = progress
         self.completion = completion
     }
     
@@ -27,7 +29,7 @@ final class Task: Operation {
             return
         }
         let semaphore = DispatchSemaphore(value: 0)
-        urlSessionTask = provider.get(fromURL: url, forceRefresh: forceRefresh) { [weak self] data, error in
+        urlSessionTask = provider.get(fromURL: url, forceRefresh: forceRefresh, progress: progress) { [weak self] data, error in
             guard let strongSelf = self else {
                 semaphore.signal()
                 return

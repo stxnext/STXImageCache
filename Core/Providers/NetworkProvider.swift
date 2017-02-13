@@ -13,8 +13,8 @@ struct NetworkProvider: Providing {
 }
 
 extension NetworkProvider {
-    func get(fromURL url: URL, forceRefresh: Bool, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
-        return imageDownloader.download(fromURL: url) { data, error in
+    func get(fromURL url: URL, forceRefresh: Bool, progress: ((Float) -> ())?, completion: @escaping (Data?, NSError?) -> ()) -> URLSessionTask? {
+        return imageDownloader.download(fromURL: url, progress: progress) { data, error in
             completion(data, error)
         }
     }

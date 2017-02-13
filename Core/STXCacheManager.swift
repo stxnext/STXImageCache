@@ -59,11 +59,12 @@ public final class STXCacheManager {
     }
     
     @discardableResult
-    public func image(atURL url: URL, forceRefresh: Bool = false, completion: @escaping STXImageOperationCompletion) -> STXImageOperation {
+    public func image(atURL url: URL, forceRefresh: Bool = false, progress: STXImageCacheProgress? = nil, completion: @escaping STXImageOperationCompletion) -> STXImageOperation {
         let task = Task(
             url: url,
             forceRefresh: forceRefresh,
             provider: provider,
+            progress: progress,
             completion: completion
         )
         let operation = STXImageOperation(task: task)

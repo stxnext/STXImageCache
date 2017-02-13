@@ -102,6 +102,9 @@ struct StorageProvider: Providing {
                 path = path.substring(from: prefix.endIndex)
             }
         }
+        if url.isFileURL {
+            return path
+        }
         return cacheDirectory + "/" + path
     }
 }

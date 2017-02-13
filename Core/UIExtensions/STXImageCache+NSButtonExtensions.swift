@@ -12,7 +12,7 @@ extension STXImageCache where Base: Button {
     @discardableResult
     public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, progress: STXImageCacheProgress? = nil, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
         if let placeholderImage = placeholder {
-            self.setImage(image: placeholderImage)
+            self.base.image = placeholderImage
         }
         return STXCacheManager.shared.image(atURL: url, forceRefresh: forceRefresh) { data, error in
             var image: Image?
@@ -23,7 +23,7 @@ extension STXImageCache where Base: Button {
                 image = completion(image, error)
             }
             DispatchQueue.main.async {
-                self.setImage(image: image)
+                self.base.image = image
             }
         }
     }

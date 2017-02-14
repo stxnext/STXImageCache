@@ -2,6 +2,11 @@
   <img src="STXImageCache_Logo.png" title="STXImageCache Logo" float=left>
 </p>
 
+[![Pod Version](http://img.shields.io/cocoapods/v/STXImageCache.svg?style=flat)](http://cocoadocs.org/docsets/STXImageCache/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/STXImageCache.svg?style=flat)](http://cocoadocs.org/docsets/SDWebImage/)
+[![Pod License](http://img.shields.io/cocoapods/l/STXImageCache.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![codebeat badge](https://codebeat.co/badges/600daf29-42bc-47d7-9bc4-79cceced5185)](https://codebeat.co/projects/github-com-stxnext-stximagecache)
+
 STXImageCache is a lightweight, pure-Swift, easy to use library for downloading and caching images. It provides convenient UI extensions. It's inspired by popular libraries like Kingfisher and SDWebImage.
 
 ## Features
@@ -23,16 +28,60 @@ STXImageCache is a lightweight, pure-Swift, easy to use library for downloading 
 - macOS 10.10 or later
 - Xcode 8.0 or later
 
+## Installation
+#### Cocoapods
+```
+pod 'STXImageCache', '~> 1.0.0'
+```
 ## Getting Started
 
+### Simplest usage
 ```swift
 let url = URL(string: "image_url")!
 imageView.stx.image(atURL: url)
 ```
 
-### CocoaPods
+### Advanced usage
+```swift
+let url = URL(string: "image_url")!
+operation = imageView?.stx.image(atURL: url, placeholder: placeholder, progress: { progress in
+        // update progressView
+    }, completion: { image, _ in
+        // do image processing
+        return image
+    })
 ```
-pod 'STXImageCache', '~> 1.0.0'
+
+### Using with UITableViewCell
+```swift
+import UIKit
+import STXImageCache
+
+final class Cell: UITableViewCell {
+    var operation: STXImageOperation?
+    @IBOutlet weak var progress: UIProgressView!
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        operation?.cancel()
+    }
+
+    func configure(withURL url: URL, placeholder: UIImage) {
+        imageView?.image = nil
+        progress.progress = 0
+        self.progress.isHidden = false
+        operation = imageView?.stx.image(atURL: url, placeholder: placeholder, progress: { progress in
+            DispatchQueue.main.async {
+                self.progress.setProgress(progress, animated: true)
+            }
+        }, completion: { image, _ in
+            DispatchQueue.main.async {
+                self.progress.isHidden = true
+            }
+            return image
+        })
+    }
+}
 ```
 
 ## Author

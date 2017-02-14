@@ -9,6 +9,19 @@
 import AppKit
 
 extension STXImageCache where Base: Button {
+    /**
+     Get an image at URL.
+     `STXCacheManager` will seek the image in memory and disk first.
+     If not found, it will download the image at from given URL and cache it.
+     
+     - parameter url:               URL for the image
+     - parameter placeholder:       An image that is used during downloading image
+     - parameter forceRefresh:      A Boolean value indicating whether the operation should force refresh
+     - parameter progress:          Periodically informs about the download’s progress.
+     - parameter completion:        Called when the whole retrieving process finished.
+     
+     - returns: A `STXImageOperation` task object. You can use this object to cancel the task.
+    */
     @discardableResult
     public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, progress: STXImageCacheProgress? = nil, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
         if let placeholderImage = placeholder {

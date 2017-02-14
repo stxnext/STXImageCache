@@ -9,6 +9,21 @@
 import UIKit
 
 extension STXImageCache where Base: Button {
+    /**
+     Get an image at URL.
+     `STXCacheManager` will seek the image in memory and disk first.
+     If not found, it will download the image at from given URL and cache it.
+     
+     - parameter url:               URL for the image
+     - parameter placeholder:       An image that is used during downloading image
+     - parameter forceRefresh:      A Boolean value indicating whether the operation should force refresh
+     - parameter controlState:      The state that uses the specified image.
+     - parameter renderingMode:     Determines how an image is rendered.
+     - parameter progress:          Periodically informs about the download’s progress.
+     - parameter completion:        Called when the whole retrieving process finished.
+     
+     - returns: A `STXImageOperation` task object. You can use this object to cancel the task.
+    */
     @discardableResult
     public func image(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal, progress: STXImageCacheProgress? = nil, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
         return image(atURL: url, forceRefresh: forceRefresh) { image, error in
@@ -22,6 +37,21 @@ extension STXImageCache where Base: Button {
         }
     }
     
+    /**
+     Get an image at URL.
+     `STXCacheManager` will seek the image in memory and disk first.
+     If not found, it will download the image at from given URL and cache it.
+     
+     - parameter url:               URL for the image
+     - parameter placeholder:       An image that is used during downloading image
+     - parameter forceRefresh:      A Boolean value indicating whether the operation should force refresh
+     - parameter controlState:      The state that uses the specified image.
+     - parameter renderingMode:     Determines how an image is rendered.
+     - parameter progress:          Periodically informs about the download’s progress.
+     - parameter completion:        Called when the whole retrieving process finished.
+     
+     - returns: A `STXImageOperation` task object. You can use this object to cancel the task.
+    */
     @discardableResult
     public func backgroundImage(atURL url: URL, placeholder: Image? = nil, forceRefresh: Bool = false, controlState: UIControlState = .normal, renderingMode: UIImageRenderingMode = .alwaysOriginal, progress: STXImageCacheProgress? = nil, completion: STXImageCacheCompletion? = nil) -> STXImageOperation {
         return image(atURL: url, forceRefresh: forceRefresh) { image, error in

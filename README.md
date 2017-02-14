@@ -32,11 +32,11 @@ STXImageCache is a lightweight, pure-Swift, easy to use library for downloading 
 ## Installation
 #### Cocoapods
 ```
-pod 'STXImageCache', '~> 1.0.0'
+pod 'STXImageCache', '~> 1.0.1'
 ```
 #### Carthage
 ```
-github "stxnext/STXImageCache" ~> 1.0.0
+github "stxnext/STXImageCache" ~> 1.0.1
 ```
 ## Getting Started
 

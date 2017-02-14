@@ -2,6 +2,7 @@
   <img src="STXImageCache_Logo.png" title="STXImageCache Logo" float=left>
 </p>
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Pod Version](http://img.shields.io/cocoapods/v/STXImageCache.svg?style=flat)](http://cocoadocs.org/docsets/STXImageCache/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/STXImageCache.svg?style=flat)](http://cocoadocs.org/docsets/SDWebImage/)
 [![Pod License](http://img.shields.io/cocoapods/l/STXImageCache.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
@@ -33,6 +34,10 @@ STXImageCache is a lightweight, pure-Swift, easy to use library for downloading 
 ```
 pod 'STXImageCache', '~> 1.0.0'
 ```
+#### Carthage
+```
+github "stxnext/STXImageCache" ~> 1.0.0
+```
 ## Getting Started
 
 ### Simplest usage
@@ -44,7 +49,8 @@ imageView.stx.image(atURL: url)
 ### Advanced usage
 ```swift
 let url = URL(string: "image_url")!
-operation = imageView?.stx.image(atURL: url, placeholder: placeholder, progress: { progress in
+let placeholder = UIImage(named: "placeholder")
+let operation = imageView.stx.image(atURL: url, placeholder: placeholder, progress: { progress in
         // update progressView
     }, completion: { image, _ in
         // do image processing

@@ -16,10 +16,13 @@ final class ImageDownloader: NSObject {
     fileprivate var progressBlocks: [Int: ImageDownloaderProgress] = [:]
     private var urlSession: URLSession!
     
-    override init() {
+    init(configuration: URLSessionConfiguration = URLSessionConfiguration.background(withIdentifier: "backgroundSession")) {
         super.init()
-        let configuration = URLSessionConfiguration.background(withIdentifier: "backgroundSession")
         urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+    }
+    
+    deinit {
+        urlSession.invalidateAndCancel()
     }
     
     func download(fromURL url: URL, progress: ImageDownloaderProgress?, completion: @escaping ImageDownloaderCompletion) -> URLSessionDownloadTask {

@@ -9,7 +9,11 @@
 import Foundation
 
 struct NetworkProvider: Providing {
-    fileprivate let imageDownloader = ImageDownloader()
+    fileprivate let imageDownloader: ImageDownloader
+    
+    init(imageDownloader: ImageDownloader = ImageDownloader()) {
+        self.imageDownloader = imageDownloader
+    }
 }
 
 extension NetworkProvider {

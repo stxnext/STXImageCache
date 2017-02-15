@@ -8,10 +8,12 @@
 
 import Foundation
 
+/// ThreadsManager provides an efficient implementation of a synchronizing mechanism, which can be used to mediate access to an application’s global data or to protect a critical section of code, allowing it to run atomically.
 final class ThreadsManager<Object: Hashable> {
     private let semaphore = DispatchSemaphore(value: 1)
     private var semaphores: [Object: DispatchSemaphore] = [:]
     
+    /// Attempts to acquire a lock for given object, blocking a thread’s execution until the lock can be acquired.
     func lock(forObject object: Object) {
         semaphore.wait()
         guard let lock = semaphores[object] else {
@@ -23,6 +25,7 @@ final class ThreadsManager<Object: Hashable> {
         lock.wait()
     }
     
+    /// Relinquishes a previously acquired lock for given object
     func unlock(forObject object: Object) {
         semaphore.wait()
         guard let lock = semaphores[object] else {

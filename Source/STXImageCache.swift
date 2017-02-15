@@ -32,6 +32,7 @@ public protocol STXImageCacheCompatible {
 }
 
 public extension STXImageCacheCompatible {
+    ///STXImageCache extension
     public var stx: STXImageCache<Self> {
         return STXImageCache(self)
     }

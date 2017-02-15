@@ -38,106 +38,104 @@
 		AE0F24091E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AE0F240A1E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AE0F240B1E49D68400B6E08B /* STXImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0F24071E49D68400B6E08B /* STXImageCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
-		AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
-		AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
-		AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24581E49DFA500B6E08B /* STXImageCache.swift */; };
-		AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */; };
-		AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */; };
-		AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */; };
-		AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */; };
-		AE0F24671E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
-		AE0F24681E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
-		AE0F24691E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
-		AE0F246A1E49ED1900B6E08B /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */; };
-		AE0F24971E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
-		AE0F24981E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
-		AE0F24991E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
-		AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24961E4A194100B6E08B /* NetworkProvider.swift */; };
-		AE0F249C1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
-		AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
-		AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
-		AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F249B1E4A199E00B6E08B /* Providing.swift */; };
-		AE0F24A61E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
-		AE0F24A71E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
-		AE0F24A81E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
-		AE0F24A91E4B017800B6E08B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24A51E4B017800B6E08B /* StorageProvider.swift */; };
-		AE0F24AB1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
-		AE0F24AC1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
-		AE0F24AD1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
-		AE0F24AE1E4B21B500B6E08B /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */; };
-		AE0F24B01E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
-		AE0F24B11E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
-		AE0F24B21E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
-		AE0F24B31E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */; };
-		AE0F24B51E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
-		AE0F24B61E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
-		AE0F24B71E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
-		AE0F24B81E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */; };
-		AE4C29971E4C5589007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
-		AE4C29981E4C5589007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
-		AE4C29991E4C558A007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
-		AE4C299A1E4C558A007EAB75 /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */; };
-		AE4C299C1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */; };
-		AE4C299D1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */; };
-		AE4C299E1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */; };
-		AE4C299F1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */; };
-		AE4C29A61E4C94C9007EAB75 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29A51E4C94C9007EAB75 /* Task.swift */; };
-		AE4C29A71E4C94C9007EAB75 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29A51E4C94C9007EAB75 /* Task.swift */; };
-		AE4C29A81E4C94C9007EAB75 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29A51E4C94C9007EAB75 /* Task.swift */; };
-		AE4C29A91E4C94C9007EAB75 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29A51E4C94C9007EAB75 /* Task.swift */; };
-		AE4C29AE1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */; };
-		AE4C29AF1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */; };
-		AE4C29B01E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */; };
-		AE4C29B11E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */; };
-		AE4C29B31E4CB81E007EAB75 /* STXImageCache+NSButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AC1E4CB81E007EAB75 /* STXImageCache+NSButtonExtensions.swift */; };
-		AE4C29B61E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AD1E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift */; };
-		AE4C29B81E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C29AD1E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift */; };
 		AEE84B601E4DAF0C006293AF /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B5D1E4DAF0C006293AF /* Cell.swift */; };
 		AEE84B611E4DAF0C006293AF /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE84B5E1E4DAF0C006293AF /* Cell.xib */; };
 		AEE84B621E4DAF0C006293AF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B5F1E4DAF0C006293AF /* TableViewController.swift */; };
-		AEE84B641E4E0622006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B631E4E0622006293AF /* ImageDownloader.swift */; };
-		AEE84B651E4E0622006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B631E4E0622006293AF /* ImageDownloader.swift */; };
-		AEE84B661E4E0622006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B631E4E0622006293AF /* ImageDownloader.swift */; };
-		AEE84B671E4E0622006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B631E4E0622006293AF /* ImageDownloader.swift */; };
 		AEE84B781E5303E9006293AF /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F233B1E49C73700B6E08B /* STXImageCache.framework */; };
-		AEE84B7F1E530547006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B7E1E530547006293AF /* STXCacheManagerTests.swift */; };
-		AEE84B811E5306C0006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B801E5306C0006293AF /* STXDiskCacheConfigTests.swift */; };
-		AEE84B831E530931006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B821E530931006293AF /* STXMemoryCacheConfigTests.swift */; };
-		AEE84B871E530A9E006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B861E530A9E006293AF /* STXImageOperationTests.swift */; };
-		AEE84B891E530CB2006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B881E530CB2006293AF /* TaskTests.swift */; };
-		AEE84B8E1E530E75006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8D1E530E75006293AF /* FakeNetworkProvider.swift */; };
-		AEE84B901E53147C006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8F1E53147C006293AF /* ThreadsManagerTests.swift */; };
-		AEE84B921E532310006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B911E532310006293AF /* NetworkProviderTests.swift */; };
-		AEE84B9A1E53295A006293AF /* STXImageCacheTests_tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B991E53295A006293AF /* STXImageCacheTests_tvOS.swift */; };
 		AEE84B9C1E53295A006293AF /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */; };
-		AEE84BA91E53296D006293AF /* STXImageCacheTests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BA81E53296D006293AF /* STXImageCacheTests_macOS.swift */; };
 		AEE84BAB1E53296D006293AF /* STXImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F23CA1E49CBF200B6E08B /* STXImageCache.framework */; };
-		AEE84BB11E532ADD006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B7E1E530547006293AF /* STXCacheManagerTests.swift */; };
-		AEE84BB21E532ADD006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B801E5306C0006293AF /* STXDiskCacheConfigTests.swift */; };
-		AEE84BB31E532ADD006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B821E530931006293AF /* STXMemoryCacheConfigTests.swift */; };
-		AEE84BB41E532ADD006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B861E530A9E006293AF /* STXImageOperationTests.swift */; };
-		AEE84BB51E532ADD006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B881E530CB2006293AF /* TaskTests.swift */; };
-		AEE84BB61E532ADD006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8F1E53147C006293AF /* ThreadsManagerTests.swift */; };
-		AEE84BB71E532ADD006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B911E532310006293AF /* NetworkProviderTests.swift */; };
-		AEE84BB81E532ADD006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B7E1E530547006293AF /* STXCacheManagerTests.swift */; };
-		AEE84BB91E532ADD006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B801E5306C0006293AF /* STXDiskCacheConfigTests.swift */; };
-		AEE84BBA1E532ADD006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B821E530931006293AF /* STXMemoryCacheConfigTests.swift */; };
-		AEE84BBB1E532ADD006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B861E530A9E006293AF /* STXImageOperationTests.swift */; };
-		AEE84BBC1E532ADD006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B881E530CB2006293AF /* TaskTests.swift */; };
-		AEE84BBD1E532ADD006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8F1E53147C006293AF /* ThreadsManagerTests.swift */; };
-		AEE84BBE1E532ADD006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B911E532310006293AF /* NetworkProviderTests.swift */; };
-		AEE84BBF1E532C3F006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8D1E530E75006293AF /* FakeNetworkProvider.swift */; };
-		AEE84BC01E532C40006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84B8D1E530E75006293AF /* FakeNetworkProvider.swift */; };
-		AEE84BC21E5334F4006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC11E5334F4006293AF /* StorageProviderTests.swift */; };
-		AEE84BC31E533620006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC11E5334F4006293AF /* StorageProviderTests.swift */; };
-		AEE84BC41E533620006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC11E5334F4006293AF /* StorageProviderTests.swift */; };
-		AEE84BC61E533C09006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC51E533C09006293AF /* MemoryProviderTests.swift */; };
-		AEE84BC71E533C09006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC51E533C09006293AF /* MemoryProviderTests.swift */; };
-		AEE84BC81E533C09006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC51E533C09006293AF /* MemoryProviderTests.swift */; };
-		AEE84BCA1E533CF2006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC91E533CF2006293AF /* FakeProvider.swift */; };
-		AEE84BCB1E533CF2006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC91E533CF2006293AF /* FakeProvider.swift */; };
-		AEE84BCC1E533CF2006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BC91E533CF2006293AF /* FakeProvider.swift */; };
+		AEE84BF91E535519006293AF /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD61E535519006293AF /* STXCacheManager.swift */; };
+		AEE84BFA1E535519006293AF /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD61E535519006293AF /* STXCacheManager.swift */; };
+		AEE84BFB1E535519006293AF /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD61E535519006293AF /* STXCacheManager.swift */; };
+		AEE84BFC1E535519006293AF /* STXCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD61E535519006293AF /* STXCacheManager.swift */; };
+		AEE84BFD1E535519006293AF /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */; };
+		AEE84BFE1E535519006293AF /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */; };
+		AEE84BFF1E535519006293AF /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */; };
+		AEE84C001E535519006293AF /* STXDiskCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */; };
+		AEE84C011E535519006293AF /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD81E535519006293AF /* STXImageCache.swift */; };
+		AEE84C021E535519006293AF /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD81E535519006293AF /* STXImageCache.swift */; };
+		AEE84C031E535519006293AF /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD81E535519006293AF /* STXImageCache.swift */; };
+		AEE84C041E535519006293AF /* STXImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD81E535519006293AF /* STXImageCache.swift */; };
+		AEE84C051E535519006293AF /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD91E535519006293AF /* STXImageOperation.swift */; };
+		AEE84C061E535519006293AF /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD91E535519006293AF /* STXImageOperation.swift */; };
+		AEE84C071E535519006293AF /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD91E535519006293AF /* STXImageOperation.swift */; };
+		AEE84C081E535519006293AF /* STXImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BD91E535519006293AF /* STXImageOperation.swift */; };
+		AEE84C091E535519006293AF /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */; };
+		AEE84C0A1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */; };
+		AEE84C0B1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */; };
+		AEE84C0C1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */; };
+		AEE84C0D1E535519006293AF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDB1E535519006293AF /* Task.swift */; };
+		AEE84C0E1E535519006293AF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDB1E535519006293AF /* Task.swift */; };
+		AEE84C0F1E535519006293AF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDB1E535519006293AF /* Task.swift */; };
+		AEE84C101E535519006293AF /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDB1E535519006293AF /* Task.swift */; };
+		AEE84C111E535519006293AF /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDC1E535519006293AF /* ThreadsManager.swift */; };
+		AEE84C121E535519006293AF /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDC1E535519006293AF /* ThreadsManager.swift */; };
+		AEE84C131E535519006293AF /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDC1E535519006293AF /* ThreadsManager.swift */; };
+		AEE84C141E535519006293AF /* ThreadsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84BDC1E535519006293AF /* ThreadsManager.swift */; };
+		AEE84CAB1E535C38006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84C9F1E535C37006293AF /* FakeNetworkProvider.swift */; };
+		AEE84CAC1E535C38006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84C9F1E535C37006293AF /* FakeNetworkProvider.swift */; };
+		AEE84CAD1E535C38006293AF /* FakeNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84C9F1E535C37006293AF /* FakeNetworkProvider.swift */; };
+		AEE84CAE1E535C38006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA01E535C37006293AF /* FakeProvider.swift */; };
+		AEE84CAF1E535C38006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA01E535C37006293AF /* FakeProvider.swift */; };
+		AEE84CB01E535C38006293AF /* FakeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA01E535C37006293AF /* FakeProvider.swift */; };
+		AEE84CB41E535C38006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA21E535C37006293AF /* MemoryProviderTests.swift */; };
+		AEE84CB51E535C38006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA21E535C37006293AF /* MemoryProviderTests.swift */; };
+		AEE84CB61E535C38006293AF /* MemoryProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA21E535C37006293AF /* MemoryProviderTests.swift */; };
+		AEE84CB71E535C38006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA31E535C37006293AF /* NetworkProviderTests.swift */; };
+		AEE84CB81E535C38006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA31E535C37006293AF /* NetworkProviderTests.swift */; };
+		AEE84CB91E535C38006293AF /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA31E535C37006293AF /* NetworkProviderTests.swift */; };
+		AEE84CBA1E535C38006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA41E535C37006293AF /* StorageProviderTests.swift */; };
+		AEE84CBB1E535C38006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA41E535C37006293AF /* StorageProviderTests.swift */; };
+		AEE84CBC1E535C38006293AF /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA41E535C37006293AF /* StorageProviderTests.swift */; };
+		AEE84CBD1E535C38006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA51E535C37006293AF /* STXCacheManagerTests.swift */; };
+		AEE84CBE1E535C38006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA51E535C37006293AF /* STXCacheManagerTests.swift */; };
+		AEE84CBF1E535C38006293AF /* STXCacheManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA51E535C37006293AF /* STXCacheManagerTests.swift */; };
+		AEE84CC01E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA61E535C38006293AF /* STXDiskCacheConfigTests.swift */; };
+		AEE84CC11E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA61E535C38006293AF /* STXDiskCacheConfigTests.swift */; };
+		AEE84CC21E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA61E535C38006293AF /* STXDiskCacheConfigTests.swift */; };
+		AEE84CC31E535C38006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA71E535C38006293AF /* STXImageOperationTests.swift */; };
+		AEE84CC41E535C38006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA71E535C38006293AF /* STXImageOperationTests.swift */; };
+		AEE84CC51E535C38006293AF /* STXImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA71E535C38006293AF /* STXImageOperationTests.swift */; };
+		AEE84CC61E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA81E535C38006293AF /* STXMemoryCacheConfigTests.swift */; };
+		AEE84CC71E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA81E535C38006293AF /* STXMemoryCacheConfigTests.swift */; };
+		AEE84CC81E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA81E535C38006293AF /* STXMemoryCacheConfigTests.swift */; };
+		AEE84CC91E535C38006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA91E535C38006293AF /* TaskTests.swift */; };
+		AEE84CCA1E535C38006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA91E535C38006293AF /* TaskTests.swift */; };
+		AEE84CCB1E535C38006293AF /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CA91E535C38006293AF /* TaskTests.swift */; };
+		AEE84CCC1E535C38006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CAA1E535C38006293AF /* ThreadsManagerTests.swift */; };
+		AEE84CCD1E535C38006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CAA1E535C38006293AF /* ThreadsManagerTests.swift */; };
+		AEE84CCE1E535C38006293AF /* ThreadsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CAA1E535C38006293AF /* ThreadsManagerTests.swift */; };
+		AEE84CD31E535F2D006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD21E535F2D006293AF /* ImageDownloader.swift */; };
+		AEE84CD41E535F2D006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD21E535F2D006293AF /* ImageDownloader.swift */; };
+		AEE84CD51E535F2D006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD21E535F2D006293AF /* ImageDownloader.swift */; };
+		AEE84CD61E535F2D006293AF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD21E535F2D006293AF /* ImageDownloader.swift */; };
+		AEE84CDA1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */; };
+		AEE84CDB1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */; };
+		AEE84CDC1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */; };
+		AEE84CDD1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */; };
+		AEE84CDF1E535F3A006293AF /* STXImageCache+NSButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD81E535F3A006293AF /* STXImageCache+NSButtonExtensions.swift */; };
+		AEE84CE21E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD91E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift */; };
+		AEE84CE41E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CD91E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift */; };
+		AEE84CEA1E535F5B006293AF /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE61E535F5B006293AF /* MemoryProvider.swift */; };
+		AEE84CEB1E535F5B006293AF /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE61E535F5B006293AF /* MemoryProvider.swift */; };
+		AEE84CEC1E535F5B006293AF /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE61E535F5B006293AF /* MemoryProvider.swift */; };
+		AEE84CED1E535F5B006293AF /* MemoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE61E535F5B006293AF /* MemoryProvider.swift */; };
+		AEE84CEE1E535F5B006293AF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE71E535F5B006293AF /* NetworkProvider.swift */; };
+		AEE84CEF1E535F5B006293AF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE71E535F5B006293AF /* NetworkProvider.swift */; };
+		AEE84CF01E535F5B006293AF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE71E535F5B006293AF /* NetworkProvider.swift */; };
+		AEE84CF11E535F5B006293AF /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE71E535F5B006293AF /* NetworkProvider.swift */; };
+		AEE84CF21E535F5B006293AF /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE81E535F5B006293AF /* Providing.swift */; };
+		AEE84CF31E535F5B006293AF /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE81E535F5B006293AF /* Providing.swift */; };
+		AEE84CF41E535F5B006293AF /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE81E535F5B006293AF /* Providing.swift */; };
+		AEE84CF51E535F5B006293AF /* Providing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE81E535F5B006293AF /* Providing.swift */; };
+		AEE84CF61E535F5B006293AF /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE91E535F5B006293AF /* StorageProvider.swift */; };
+		AEE84CF71E535F5B006293AF /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE91E535F5B006293AF /* StorageProvider.swift */; };
+		AEE84CF81E535F5B006293AF /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE91E535F5B006293AF /* StorageProvider.swift */; };
+		AEE84CF91E535F5B006293AF /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CE91E535F5B006293AF /* StorageProvider.swift */; };
+		AEE84CFB1E535F74006293AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CFA1E535F74006293AF /* Typealiases.swift */; };
+		AEE84CFC1E535F74006293AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CFA1E535F74006293AF /* Typealiases.swift */; };
+		AEE84CFD1E535F74006293AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CFA1E535F74006293AF /* Typealiases.swift */; };
+		AEE84CFE1E535F74006293AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84CFA1E535F74006293AF /* Typealiases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,48 +306,42 @@
 		AE0F23E01E49CCCD00B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0F23F61E49CD3900B6E08B /* STXImageCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STXImageCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0F24071E49D68400B6E08B /* STXImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STXImageCache.h; sourceTree = "<group>"; };
-		AE0F24581E49DFA500B6E08B /* STXImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageCache.swift; sourceTree = "<group>"; };
-		AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
-		AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
-		AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
-		AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformDependent.swift; sourceTree = "<group>"; };
-		AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXCacheManager.swift; sourceTree = "<group>"; };
-		AE0F24961E4A194100B6E08B /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
-		AE0F249B1E4A199E00B6E08B /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
-		AE0F24A51E4B017800B6E08B /* StorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
-		AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProvider.swift; sourceTree = "<group>"; };
-		AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfig.swift; sourceTree = "<group>"; };
-		AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfig.swift; sourceTree = "<group>"; };
-		AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsManager.swift; sourceTree = "<group>"; };
-		AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageOperation.swift; sourceTree = "<group>"; };
-		AE4C29A51E4C94C9007EAB75 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+ImageViewExtensions.swift"; sourceTree = "<group>"; };
-		AE4C29AC1E4CB81E007EAB75 /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
-		AE4C29AD1E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+UIButtonExtensions.swift"; sourceTree = "<group>"; };
 		AEE84B5D1E4DAF0C006293AF /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		AEE84B5E1E4DAF0C006293AF /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		AEE84B5F1E4DAF0C006293AF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		AEE84B631E4E0622006293AF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		AEE84B691E51DB2F006293AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEE84B731E5303E9006293AF /* STXImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STXImageCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEE84B771E5303E9006293AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEE84B7E1E530547006293AF /* STXCacheManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXCacheManagerTests.swift; sourceTree = "<group>"; };
-		AEE84B801E5306C0006293AF /* STXDiskCacheConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfigTests.swift; sourceTree = "<group>"; };
-		AEE84B821E530931006293AF /* STXMemoryCacheConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfigTests.swift; sourceTree = "<group>"; };
-		AEE84B861E530A9E006293AF /* STXImageOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageOperationTests.swift; sourceTree = "<group>"; };
-		AEE84B881E530CB2006293AF /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
-		AEE84B8D1E530E75006293AF /* FakeNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworkProvider.swift; sourceTree = "<group>"; };
-		AEE84B8F1E53147C006293AF /* ThreadsManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsManagerTests.swift; sourceTree = "<group>"; };
-		AEE84B911E532310006293AF /* NetworkProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
 		AEE84B971E53295A006293AF /* STXImageCacheTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STXImageCacheTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEE84B991E53295A006293AF /* STXImageCacheTests_tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STXImageCacheTests_tvOS.swift; sourceTree = "<group>"; };
-		AEE84B9B1E53295A006293AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEE84BA61E53296D006293AF /* STXImageCacheTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STXImageCacheTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEE84BA81E53296D006293AF /* STXImageCacheTests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STXImageCacheTests_macOS.swift; sourceTree = "<group>"; };
-		AEE84BAA1E53296D006293AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEE84BC11E5334F4006293AF /* StorageProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProviderTests.swift; sourceTree = "<group>"; };
-		AEE84BC51E533C09006293AF /* MemoryProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProviderTests.swift; sourceTree = "<group>"; };
-		AEE84BC91E533CF2006293AF /* FakeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeProvider.swift; sourceTree = "<group>"; };
+		AEE84BCE1E535519006293AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE84BD61E535519006293AF /* STXCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXCacheManager.swift; sourceTree = "<group>"; };
+		AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfig.swift; sourceTree = "<group>"; };
+		AEE84BD81E535519006293AF /* STXImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageCache.swift; sourceTree = "<group>"; };
+		AEE84BD91E535519006293AF /* STXImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageOperation.swift; sourceTree = "<group>"; };
+		AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfig.swift; sourceTree = "<group>"; };
+		AEE84BDB1E535519006293AF /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AEE84BDC1E535519006293AF /* ThreadsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsManager.swift; sourceTree = "<group>"; };
+		AEE84C211E535655006293AF /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		AEE84C9F1E535C37006293AF /* FakeNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworkProvider.swift; sourceTree = "<group>"; };
+		AEE84CA01E535C37006293AF /* FakeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeProvider.swift; sourceTree = "<group>"; };
+		AEE84CA11E535C37006293AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE84CA21E535C37006293AF /* MemoryProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProviderTests.swift; sourceTree = "<group>"; };
+		AEE84CA31E535C37006293AF /* NetworkProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
+		AEE84CA41E535C37006293AF /* StorageProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProviderTests.swift; sourceTree = "<group>"; };
+		AEE84CA51E535C37006293AF /* STXCacheManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXCacheManagerTests.swift; sourceTree = "<group>"; };
+		AEE84CA61E535C38006293AF /* STXDiskCacheConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXDiskCacheConfigTests.swift; sourceTree = "<group>"; };
+		AEE84CA71E535C38006293AF /* STXImageOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXImageOperationTests.swift; sourceTree = "<group>"; };
+		AEE84CA81E535C38006293AF /* STXMemoryCacheConfigTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STXMemoryCacheConfigTests.swift; sourceTree = "<group>"; };
+		AEE84CA91E535C38006293AF /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		AEE84CAA1E535C38006293AF /* ThreadsManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadsManagerTests.swift; sourceTree = "<group>"; };
+		AEE84CD21E535F2D006293AF /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+ImageViewExtensions.swift"; sourceTree = "<group>"; };
+		AEE84CD81E535F3A006293AF /* STXImageCache+NSButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+NSButtonExtensions.swift"; sourceTree = "<group>"; };
+		AEE84CD91E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "STXImageCache+UIButtonExtensions.swift"; sourceTree = "<group>"; };
+		AEE84CE61E535F5B006293AF /* MemoryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryProvider.swift; sourceTree = "<group>"; };
+		AEE84CE71E535F5B006293AF /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		AEE84CE81E535F5B006293AF /* Providing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providing.swift; sourceTree = "<group>"; };
+		AEE84CE91E535F5B006293AF /* StorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
+		AEE84CFA1E535F74006293AF /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,14 +441,9 @@
 				AE0F239E1E49C91E00B6E08B /* STXImageCacheDemo-watchOS */,
 				AE0F23AD1E49C91E00B6E08B /* STXImageCacheDemo-watchOS Extension */,
 				AE0F24071E49D68400B6E08B /* STXImageCache.h */,
-				AE0F236F1E49C84200B6E08B /* Core */,
-				AE0F233C1E49C73700B6E08B /* STXImageCache-iOS */,
-				AE0F234E1E49C78A00B6E08B /* STXImageCache-macOS */,
-				AE0F235B1E49C7D500B6E08B /* STXImageCache-watchOS */,
-				AE0F23681E49C7E300B6E08B /* STXImageCache-tvOS */,
-				AEE84B741E5303E9006293AF /* STXImageCacheTests */,
-				AEE84B981E53295A006293AF /* STXImageCacheTests-tvOS */,
-				AEE84BA71E53296D006293AF /* STXImageCacheTests-macOS */,
+				AEE84C211E535655006293AF /* Package.swift */,
+				AEE84BCD1E535519006293AF /* Source */,
+				AEE84C3E1E5357F7006293AF /* Tests */,
 				AE0F22FA1E49C62C00B6E08B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -493,56 +480,6 @@
 				AE0F23321E49C72200B6E08B /* Info.plist */,
 			);
 			path = STXImageCacheDemo;
-			sourceTree = "<group>";
-		};
-		AE0F233C1E49C73700B6E08B /* STXImageCache-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				AE0F245D1E49E18D00B6E08B /* PlatformDependent.swift */,
-			);
-			path = "STXImageCache-iOS";
-			sourceTree = "<group>";
-		};
-		AE0F234E1E49C78A00B6E08B /* STXImageCache-macOS */ = {
-			isa = PBXGroup;
-			children = (
-				AE0F245F1E49E1C500B6E08B /* PlatformDependent.swift */,
-			);
-			path = "STXImageCache-macOS";
-			sourceTree = "<group>";
-		};
-		AE0F235B1E49C7D500B6E08B /* STXImageCache-watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				AE0F24611E49E1F800B6E08B /* PlatformDependent.swift */,
-			);
-			path = "STXImageCache-watchOS";
-			sourceTree = "<group>";
-		};
-		AE0F23681E49C7E300B6E08B /* STXImageCache-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				AE0F24631E49E20B00B6E08B /* PlatformDependent.swift */,
-			);
-			path = "STXImageCache-tvOS";
-			sourceTree = "<group>";
-		};
-		AE0F236F1E49C84200B6E08B /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AEE84B691E51DB2F006293AF /* Info.plist */,
-				AE0F24111E49D98A00B6E08B /* Networking */,
-				AE0F24951E4A191D00B6E08B /* Providers */,
-				AE4C29AA1E4CB81E007EAB75 /* UIExtensions */,
-				AE0F24581E49DFA500B6E08B /* STXImageCache.swift */,
-				AE0F24661E49ED1900B6E08B /* STXCacheManager.swift */,
-				AE4C299B1E4C8F6F007EAB75 /* STXImageOperation.swift */,
-				AE0F24B41E4B3BA600B6E08B /* STXMemoryCacheConfig.swift */,
-				AE0F24AF1E4B3B9C00B6E08B /* STXDiskCacheConfig.swift */,
-				AE4C29A51E4C94C9007EAB75 /* Task.swift */,
-				AE4C29961E4C5589007EAB75 /* ThreadsManager.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		AE0F23751E49C89A00B6E08B /* STXImageCacheDemo-macOS */ = {
@@ -590,78 +527,87 @@
 			path = "STXImageCacheDemo-watchOS Extension";
 			sourceTree = "<group>";
 		};
-		AE0F24111E49D98A00B6E08B /* Networking */ = {
+		AEE84BCD1E535519006293AF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AEE84B631E4E0622006293AF /* ImageDownloader.swift */,
+				AEE84CD11E535F0A006293AF /* Networking */,
+				AEE84CD01E535F04006293AF /* UIExtensions */,
+				AEE84CCF1E535EFF006293AF /* Providers */,
+				AEE84BD61E535519006293AF /* STXCacheManager.swift */,
+				AEE84BD71E535519006293AF /* STXDiskCacheConfig.swift */,
+				AEE84BD81E535519006293AF /* STXImageCache.swift */,
+				AEE84BD91E535519006293AF /* STXImageOperation.swift */,
+				AEE84BDA1E535519006293AF /* STXMemoryCacheConfig.swift */,
+				AEE84BDB1E535519006293AF /* Task.swift */,
+				AEE84BDC1E535519006293AF /* ThreadsManager.swift */,
+				AEE84CFA1E535F74006293AF /* Typealiases.swift */,
+				AEE84BCE1E535519006293AF /* Info.plist */,
 			);
-			path = Networking;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		AE0F24951E4A191D00B6E08B /* Providers */ = {
+		AEE84C3E1E5357F7006293AF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AE0F249B1E4A199E00B6E08B /* Providing.swift */,
-				AE0F24961E4A194100B6E08B /* NetworkProvider.swift */,
-				AE0F24A51E4B017800B6E08B /* StorageProvider.swift */,
-				AE0F24AA1E4B21B500B6E08B /* MemoryProvider.swift */,
+				AEE84C9D1E535C37006293AF /* STXImageTests */,
 			);
-			path = Providers;
+			path = Tests;
 			sourceTree = "<group>";
 		};
-		AE4C29AA1E4CB81E007EAB75 /* UIExtensions */ = {
+		AEE84C9D1E535C37006293AF /* STXImageTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE4C29AB1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift */,
-				AE4C29AC1E4CB81E007EAB75 /* STXImageCache+NSButtonExtensions.swift */,
-				AE4C29AD1E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift */,
+				AEE84C9E1E535C37006293AF /* Helper */,
+				AEE84CA21E535C37006293AF /* MemoryProviderTests.swift */,
+				AEE84CA31E535C37006293AF /* NetworkProviderTests.swift */,
+				AEE84CA41E535C37006293AF /* StorageProviderTests.swift */,
+				AEE84CA51E535C37006293AF /* STXCacheManagerTests.swift */,
+				AEE84CA61E535C38006293AF /* STXDiskCacheConfigTests.swift */,
+				AEE84CA71E535C38006293AF /* STXImageOperationTests.swift */,
+				AEE84CA81E535C38006293AF /* STXMemoryCacheConfigTests.swift */,
+				AEE84CA91E535C38006293AF /* TaskTests.swift */,
+				AEE84CAA1E535C38006293AF /* ThreadsManagerTests.swift */,
+				AEE84CA11E535C37006293AF /* Info.plist */,
 			);
-			path = UIExtensions;
+			path = STXImageTests;
 			sourceTree = "<group>";
 		};
-		AEE84B741E5303E9006293AF /* STXImageCacheTests */ = {
+		AEE84C9E1E535C37006293AF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				AEE84B8C1E530E63006293AF /* Helper */,
-				AEE84B7E1E530547006293AF /* STXCacheManagerTests.swift */,
-				AEE84B801E5306C0006293AF /* STXDiskCacheConfigTests.swift */,
-				AEE84B821E530931006293AF /* STXMemoryCacheConfigTests.swift */,
-				AEE84B861E530A9E006293AF /* STXImageOperationTests.swift */,
-				AEE84B881E530CB2006293AF /* TaskTests.swift */,
-				AEE84B8F1E53147C006293AF /* ThreadsManagerTests.swift */,
-				AEE84B911E532310006293AF /* NetworkProviderTests.swift */,
-				AEE84BC11E5334F4006293AF /* StorageProviderTests.swift */,
-				AEE84BC51E533C09006293AF /* MemoryProviderTests.swift */,
-				AEE84B771E5303E9006293AF /* Info.plist */,
-			);
-			path = STXImageCacheTests;
-			sourceTree = "<group>";
-		};
-		AEE84B8C1E530E63006293AF /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				AEE84B8D1E530E75006293AF /* FakeNetworkProvider.swift */,
-				AEE84BC91E533CF2006293AF /* FakeProvider.swift */,
+				AEE84C9F1E535C37006293AF /* FakeNetworkProvider.swift */,
+				AEE84CA01E535C37006293AF /* FakeProvider.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		AEE84B981E53295A006293AF /* STXImageCacheTests-tvOS */ = {
+		AEE84CCF1E535EFF006293AF /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				AEE84B991E53295A006293AF /* STXImageCacheTests_tvOS.swift */,
-				AEE84B9B1E53295A006293AF /* Info.plist */,
+				AEE84CE61E535F5B006293AF /* MemoryProvider.swift */,
+				AEE84CE71E535F5B006293AF /* NetworkProvider.swift */,
+				AEE84CE81E535F5B006293AF /* Providing.swift */,
+				AEE84CE91E535F5B006293AF /* StorageProvider.swift */,
 			);
-			path = "STXImageCacheTests-tvOS";
+			name = Providers;
 			sourceTree = "<group>";
 		};
-		AEE84BA71E53296D006293AF /* STXImageCacheTests-macOS */ = {
+		AEE84CD01E535F04006293AF /* UIExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				AEE84BA81E53296D006293AF /* STXImageCacheTests_macOS.swift */,
-				AEE84BAA1E53296D006293AF /* Info.plist */,
+				AEE84CD71E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift */,
+				AEE84CD81E535F3A006293AF /* STXImageCache+NSButtonExtensions.swift */,
+				AEE84CD91E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift */,
 			);
-			path = "STXImageCacheTests-macOS";
+			name = UIExtensions;
+			sourceTree = "<group>";
+		};
+		AEE84CD11E535F0A006293AF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AEE84CD21E535F2D006293AF /* ImageDownloader.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1116,21 +1062,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0F24A61E4B017800B6E08B /* StorageProvider.swift in Sources */,
-				AE4C299C1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */,
-				AE4C29A61E4C94C9007EAB75 /* Task.swift in Sources */,
-				AE0F24B01E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
-				AE4C29AE1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */,
-				AEE84B641E4E0622006293AF /* ImageDownloader.swift in Sources */,
-				AE0F24B51E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
-				AE0F24AB1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24671E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
-				AE4C29B61E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift in Sources */,
-				AE0F245E1E49E18D00B6E08B /* PlatformDependent.swift in Sources */,
-				AE0F24591E49DFA500B6E08B /* STXImageCache.swift in Sources */,
-				AE4C29971E4C5589007EAB75 /* ThreadsManager.swift in Sources */,
-				AE0F249C1E4A199E00B6E08B /* Providing.swift in Sources */,
-				AE0F24971E4A194100B6E08B /* NetworkProvider.swift in Sources */,
+				AEE84CE21E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift in Sources */,
+				AEE84BF91E535519006293AF /* STXCacheManager.swift in Sources */,
+				AEE84CFB1E535F74006293AF /* Typealiases.swift in Sources */,
+				AEE84C111E535519006293AF /* ThreadsManager.swift in Sources */,
+				AEE84CD31E535F2D006293AF /* ImageDownloader.swift in Sources */,
+				AEE84C011E535519006293AF /* STXImageCache.swift in Sources */,
+				AEE84CEE1E535F5B006293AF /* NetworkProvider.swift in Sources */,
+				AEE84CF61E535F5B006293AF /* StorageProvider.swift in Sources */,
+				AEE84C0D1E535519006293AF /* Task.swift in Sources */,
+				AEE84C091E535519006293AF /* STXMemoryCacheConfig.swift in Sources */,
+				AEE84C051E535519006293AF /* STXImageOperation.swift in Sources */,
+				AEE84CDA1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */,
+				AEE84BFD1E535519006293AF /* STXDiskCacheConfig.swift in Sources */,
+				AEE84CF21E535F5B006293AF /* Providing.swift in Sources */,
+				AEE84CEA1E535F5B006293AF /* MemoryProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,21 +1111,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0F24A71E4B017800B6E08B /* StorageProvider.swift in Sources */,
-				AE4C299D1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */,
-				AE4C29A71E4C94C9007EAB75 /* Task.swift in Sources */,
-				AE0F24B11E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
-				AE4C29AF1E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */,
-				AEE84B651E4E0622006293AF /* ImageDownloader.swift in Sources */,
-				AE0F24B61E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
-				AE0F24AC1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24681E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
-				AE0F24601E49E1C500B6E08B /* PlatformDependent.swift in Sources */,
-				AE0F245A1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
-				AE4C29981E4C5589007EAB75 /* ThreadsManager.swift in Sources */,
-				AE0F249D1E4A199E00B6E08B /* Providing.swift in Sources */,
-				AE4C29B31E4CB81E007EAB75 /* STXImageCache+NSButtonExtensions.swift in Sources */,
-				AE0F24981E4A194100B6E08B /* NetworkProvider.swift in Sources */,
+				AEE84BFA1E535519006293AF /* STXCacheManager.swift in Sources */,
+				AEE84C121E535519006293AF /* ThreadsManager.swift in Sources */,
+				AEE84CFC1E535F74006293AF /* Typealiases.swift in Sources */,
+				AEE84CD41E535F2D006293AF /* ImageDownloader.swift in Sources */,
+				AEE84C021E535519006293AF /* STXImageCache.swift in Sources */,
+				AEE84C0E1E535519006293AF /* Task.swift in Sources */,
+				AEE84CEF1E535F5B006293AF /* NetworkProvider.swift in Sources */,
+				AEE84CF71E535F5B006293AF /* StorageProvider.swift in Sources */,
+				AEE84C0A1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */,
+				AEE84C061E535519006293AF /* STXImageOperation.swift in Sources */,
+				AEE84CDB1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */,
+				AEE84BFE1E535519006293AF /* STXDiskCacheConfig.swift in Sources */,
+				AEE84CDF1E535F3A006293AF /* STXImageCache+NSButtonExtensions.swift in Sources */,
+				AEE84CF31E535F5B006293AF /* Providing.swift in Sources */,
+				AEE84CEB1E535F5B006293AF /* MemoryProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1187,21 +1133,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0F24A81E4B017800B6E08B /* StorageProvider.swift in Sources */,
-				AE4C299E1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */,
-				AE4C29A81E4C94C9007EAB75 /* Task.swift in Sources */,
-				AE0F24B21E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
-				AE4C29B01E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */,
-				AEE84B661E4E0622006293AF /* ImageDownloader.swift in Sources */,
-				AE0F24B71E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
-				AE0F24AD1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
-				AE0F24691E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
-				AE4C29B81E4CB81E007EAB75 /* STXImageCache+UIButtonExtensions.swift in Sources */,
-				AE0F24641E49E20B00B6E08B /* PlatformDependent.swift in Sources */,
-				AE0F245B1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
-				AE4C29991E4C558A007EAB75 /* ThreadsManager.swift in Sources */,
-				AE0F249E1E4A199E00B6E08B /* Providing.swift in Sources */,
-				AE0F24991E4A194100B6E08B /* NetworkProvider.swift in Sources */,
+				AEE84CE41E535F3A006293AF /* STXImageCache+UIButtonExtensions.swift in Sources */,
+				AEE84BFB1E535519006293AF /* STXCacheManager.swift in Sources */,
+				AEE84CFD1E535F74006293AF /* Typealiases.swift in Sources */,
+				AEE84C131E535519006293AF /* ThreadsManager.swift in Sources */,
+				AEE84CD51E535F2D006293AF /* ImageDownloader.swift in Sources */,
+				AEE84C031E535519006293AF /* STXImageCache.swift in Sources */,
+				AEE84CF01E535F5B006293AF /* NetworkProvider.swift in Sources */,
+				AEE84CF81E535F5B006293AF /* StorageProvider.swift in Sources */,
+				AEE84C0F1E535519006293AF /* Task.swift in Sources */,
+				AEE84C0B1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */,
+				AEE84C071E535519006293AF /* STXImageOperation.swift in Sources */,
+				AEE84CDC1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */,
+				AEE84BFF1E535519006293AF /* STXDiskCacheConfig.swift in Sources */,
+				AEE84CF41E535F5B006293AF /* Providing.swift in Sources */,
+				AEE84CEC1E535F5B006293AF /* MemoryProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1209,20 +1155,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0F24A91E4B017800B6E08B /* StorageProvider.swift in Sources */,
-				AE0F24B31E4B3B9C00B6E08B /* STXDiskCacheConfig.swift in Sources */,
-				AE4C29A91E4C94C9007EAB75 /* Task.swift in Sources */,
-				AE4C29B11E4CB81E007EAB75 /* STXImageCache+ImageViewExtensions.swift in Sources */,
-				AE0F246A1E49ED1900B6E08B /* STXCacheManager.swift in Sources */,
-				AE0F24621E49E1F800B6E08B /* PlatformDependent.swift in Sources */,
-				AEE84B671E4E0622006293AF /* ImageDownloader.swift in Sources */,
-				AE0F249F1E4A199E00B6E08B /* Providing.swift in Sources */,
-				AE4C299A1E4C558A007EAB75 /* ThreadsManager.swift in Sources */,
-				AE0F245C1E49DFA500B6E08B /* STXImageCache.swift in Sources */,
-				AE0F249A1E4A194100B6E08B /* NetworkProvider.swift in Sources */,
-				AE4C299F1E4C8F6F007EAB75 /* STXImageOperation.swift in Sources */,
-				AE0F24B81E4B3BA600B6E08B /* STXMemoryCacheConfig.swift in Sources */,
-				AE0F24AE1E4B21B500B6E08B /* MemoryProvider.swift in Sources */,
+				AEE84CF51E535F5B006293AF /* Providing.swift in Sources */,
+				AEE84BFC1E535519006293AF /* STXCacheManager.swift in Sources */,
+				AEE84CFE1E535F74006293AF /* Typealiases.swift in Sources */,
+				AEE84CF91E535F5B006293AF /* StorageProvider.swift in Sources */,
+				AEE84C141E535519006293AF /* ThreadsManager.swift in Sources */,
+				AEE84CD61E535F2D006293AF /* ImageDownloader.swift in Sources */,
+				AEE84C041E535519006293AF /* STXImageCache.swift in Sources */,
+				AEE84C101E535519006293AF /* Task.swift in Sources */,
+				AEE84C0C1E535519006293AF /* STXMemoryCacheConfig.swift in Sources */,
+				AEE84C081E535519006293AF /* STXImageOperation.swift in Sources */,
+				AEE84CF11E535F5B006293AF /* NetworkProvider.swift in Sources */,
+				AEE84CDD1E535F3A006293AF /* STXImageCache+ImageViewExtensions.swift in Sources */,
+				AEE84C001E535519006293AF /* STXDiskCacheConfig.swift in Sources */,
+				AEE84CED1E535F5B006293AF /* MemoryProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1230,17 +1176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE84B7F1E530547006293AF /* STXCacheManagerTests.swift in Sources */,
-				AEE84BC21E5334F4006293AF /* StorageProviderTests.swift in Sources */,
-				AEE84B891E530CB2006293AF /* TaskTests.swift in Sources */,
-				AEE84B8E1E530E75006293AF /* FakeNetworkProvider.swift in Sources */,
-				AEE84B871E530A9E006293AF /* STXImageOperationTests.swift in Sources */,
-				AEE84B901E53147C006293AF /* ThreadsManagerTests.swift in Sources */,
-				AEE84B921E532310006293AF /* NetworkProviderTests.swift in Sources */,
-				AEE84BCA1E533CF2006293AF /* FakeProvider.swift in Sources */,
-				AEE84BC61E533C09006293AF /* MemoryProviderTests.swift in Sources */,
-				AEE84B811E5306C0006293AF /* STXDiskCacheConfigTests.swift in Sources */,
-				AEE84B831E530931006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
+				AEE84CC01E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */,
+				AEE84CAB1E535C38006293AF /* FakeNetworkProvider.swift in Sources */,
+				AEE84CB71E535C38006293AF /* NetworkProviderTests.swift in Sources */,
+				AEE84CAE1E535C38006293AF /* FakeProvider.swift in Sources */,
+				AEE84CB41E535C38006293AF /* MemoryProviderTests.swift in Sources */,
+				AEE84CC61E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
+				AEE84CCC1E535C38006293AF /* ThreadsManagerTests.swift in Sources */,
+				AEE84CC91E535C38006293AF /* TaskTests.swift in Sources */,
+				AEE84CC31E535C38006293AF /* STXImageOperationTests.swift in Sources */,
+				AEE84CBD1E535C38006293AF /* STXCacheManagerTests.swift in Sources */,
+				AEE84CBA1E535C38006293AF /* StorageProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1248,18 +1194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE84BB11E532ADD006293AF /* STXCacheManagerTests.swift in Sources */,
-				AEE84BB21E532ADD006293AF /* STXDiskCacheConfigTests.swift in Sources */,
-				AEE84BBF1E532C3F006293AF /* FakeNetworkProvider.swift in Sources */,
-				AEE84BB51E532ADD006293AF /* TaskTests.swift in Sources */,
-				AEE84BC31E533620006293AF /* StorageProviderTests.swift in Sources */,
-				AEE84B9A1E53295A006293AF /* STXImageCacheTests_tvOS.swift in Sources */,
-				AEE84BB61E532ADD006293AF /* ThreadsManagerTests.swift in Sources */,
-				AEE84BB71E532ADD006293AF /* NetworkProviderTests.swift in Sources */,
-				AEE84BC71E533C09006293AF /* MemoryProviderTests.swift in Sources */,
-				AEE84BB31E532ADD006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
-				AEE84BB41E532ADD006293AF /* STXImageOperationTests.swift in Sources */,
-				AEE84BCB1E533CF2006293AF /* FakeProvider.swift in Sources */,
+				AEE84CC11E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */,
+				AEE84CAC1E535C38006293AF /* FakeNetworkProvider.swift in Sources */,
+				AEE84CB81E535C38006293AF /* NetworkProviderTests.swift in Sources */,
+				AEE84CAF1E535C38006293AF /* FakeProvider.swift in Sources */,
+				AEE84CB51E535C38006293AF /* MemoryProviderTests.swift in Sources */,
+				AEE84CC71E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
+				AEE84CCD1E535C38006293AF /* ThreadsManagerTests.swift in Sources */,
+				AEE84CCA1E535C38006293AF /* TaskTests.swift in Sources */,
+				AEE84CC41E535C38006293AF /* STXImageOperationTests.swift in Sources */,
+				AEE84CBE1E535C38006293AF /* STXCacheManagerTests.swift in Sources */,
+				AEE84CBB1E535C38006293AF /* StorageProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,18 +1212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEE84BB81E532ADD006293AF /* STXCacheManagerTests.swift in Sources */,
-				AEE84BB91E532ADD006293AF /* STXDiskCacheConfigTests.swift in Sources */,
-				AEE84BC01E532C40006293AF /* FakeNetworkProvider.swift in Sources */,
-				AEE84BBC1E532ADD006293AF /* TaskTests.swift in Sources */,
-				AEE84BC41E533620006293AF /* StorageProviderTests.swift in Sources */,
-				AEE84BA91E53296D006293AF /* STXImageCacheTests_macOS.swift in Sources */,
-				AEE84BBD1E532ADD006293AF /* ThreadsManagerTests.swift in Sources */,
-				AEE84BBE1E532ADD006293AF /* NetworkProviderTests.swift in Sources */,
-				AEE84BC81E533C09006293AF /* MemoryProviderTests.swift in Sources */,
-				AEE84BBA1E532ADD006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
-				AEE84BBB1E532ADD006293AF /* STXImageOperationTests.swift in Sources */,
-				AEE84BCC1E533CF2006293AF /* FakeProvider.swift in Sources */,
+				AEE84CC21E535C38006293AF /* STXDiskCacheConfigTests.swift in Sources */,
+				AEE84CAD1E535C38006293AF /* FakeNetworkProvider.swift in Sources */,
+				AEE84CB91E535C38006293AF /* NetworkProviderTests.swift in Sources */,
+				AEE84CB01E535C38006293AF /* FakeProvider.swift in Sources */,
+				AEE84CB61E535C38006293AF /* MemoryProviderTests.swift in Sources */,
+				AEE84CC81E535C38006293AF /* STXMemoryCacheConfigTests.swift in Sources */,
+				AEE84CCE1E535C38006293AF /* ThreadsManagerTests.swift in Sources */,
+				AEE84CCB1E535C38006293AF /* TaskTests.swift in Sources */,
+				AEE84CC51E535C38006293AF /* STXImageOperationTests.swift in Sources */,
+				AEE84CBF1E535C38006293AF /* STXCacheManagerTests.swift in Sources */,
+				AEE84CBC1E535C38006293AF /* StorageProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1511,7 +1455,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1531,7 +1475,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1683,7 +1627,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -1704,7 +1648,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -1723,7 +1667,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-tvOS";
@@ -1743,7 +1687,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-tvOS";
@@ -1764,7 +1708,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-watchOS";
@@ -1785,7 +1729,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCache-watchOS";
@@ -1802,7 +1746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = STXImageCacheTests/Info.plist;
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheTests;
@@ -1816,7 +1760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = STXImageCacheTests/Info.plist;
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stxnext.STXImageCacheTests;
@@ -1829,7 +1773,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "STXImageCacheTests-tvOS/Info.plist";
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheTests-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1843,7 +1787,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "STXImageCacheTests-tvOS/Info.plist";
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheTests-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1857,7 +1801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "STXImageCacheTests-macOS/Info.plist";
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheTests-macOS";
@@ -1871,7 +1815,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "STXImageCacheTests-macOS/Info.plist";
+				INFOPLIST_FILE = Tests/STXImageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stxnext.STXImageCacheTests-macOS";

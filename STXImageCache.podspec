@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "STXImageCache"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "A lightweight and pure-Swift library for downloading and caching images."
 
   s.description  = <<-DESC
@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/stxnext/STXImageCache.git", :tag => s.version }
 
-  s.ios.source_files = ["Core/**/*.swift", "STXImageCache.h", "STXImageCache-iOS/PlatformDependent.swift"]
-  s.watchos.source_files = ["Core/**/*.swift", "STXImageCache.h", "STXImageCache-watchOS/PlatformDependent.swift"]
-  s.tvos.source_files = ["Core/**/*.swift", "STXImageCache.h", "STXImageCache-tvOS/PlatformDependent.swift"]
-  s.osx.source_files = ["Core/**/*.swift", "STXImageCache.h", "STXImageCache-macOS/PlatformDependent.swift"]
+  s.ios.source_files = ["Source/*.swift", "STXImageCache.h"]
+  s.watchos.source_files = ["Source/*.swift", "STXImageCache.h"]
+  s.tvos.source_files = ["Source/*.swift", "STXImageCache.h"]
+  s.osx.source_files = ["Source/*.swift", "STXImageCache.h"]
 
   s.public_header_files = ["STXImageCache.h"]
 
-  s.osx.exclude_files = ["Core/UIExtensions/STXImageCache+UIButtonExtensions.swift"]
-  s.watchos.exclude_files = ["Core/UIExtensions/STXImageCache+NSButtonExtensions.swift", "Core/UIExtensions/STXImageCache+UIButtonExtensions.swift"]
-  s.ios.exclude_files = ["Core/UIExtensions/STXImageCache+NSButtonExtensions.swift"]
-  s.tvos.exclude_files = ["Core/UIExtensions/STXImageCache+NSButtonExtensions.swift"]
+  s.osx.exclude_files = ["Source/STXImageCache+UIButtonExtensions.swift"]
+  s.watchos.exclude_files = ["Source/STXImageCache+NSButtonExtensions.swift", "Source/STXImageCache+UIButtonExtensions.swift"]
+  s.ios.exclude_files = ["Source/STXImageCache+NSButtonExtensions.swift"]
+  s.tvos.exclude_files = ["Source/STXImageCache+NSButtonExtensions.swift"]
 
   s.requires_arc = true
 
